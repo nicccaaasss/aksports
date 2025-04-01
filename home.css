@@ -242,14 +242,6 @@ img {
     .menu a {
         font-size: 22px;
     }
-
-    .timing-box h2, .timing-box p {
-        font-size: 22px; /* Further increase heading and paragraph size in timing box for mobile */
-    }
-
-    .motto-content h2, .motto-content p {
-        font-size: 22px; /* Further increase heading and paragraph size in motto content for mobile */
-    }
     }
 
     /* Add some spacing for the body content */
@@ -431,7 +423,6 @@ img {
     .content-box h2 {
         color: #00ffff;
         margin-bottom: 20px;
-        font-size: 40px;
         opacity: 0;
         transform: translateY(20px);
         transition: all 0.6s ease;
@@ -441,7 +432,6 @@ img {
         color: #ffffff;
         line-height: 1.6;
         margin-bottom: 15px;
-        font-size: 40px;
         opacity: 0;
         transform: translateY(20px);
         transition: all 0.6s ease;
