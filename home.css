@@ -232,23 +232,23 @@ img {
             visibility: visible;
         }
             body {
-        font-size: 20px;  /* Increase base font size */
+        font-size: 24px;  /* Increase base font size */
     }
 
     .intro-text {
-         font-size: 2.5rem;
+         font-size: 3rem;
     }
 
     .menu a {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .timing-box h2, .timing-box p {
-        font-size: 20px; /* Further increase heading and paragraph size in timing box for mobile */
+        font-size: 22px; /* Further increase heading and paragraph size in timing box for mobile */
     }
 
     .motto-content h2, .motto-content p {
-        font-size: 20px; /* Further increase heading and paragraph size in motto content for mobile */
+        font-size: 22px; /* Further increase heading and paragraph size in motto content for mobile */
     }
     }
 
@@ -431,7 +431,7 @@ img {
     .content-box h2 {
         color: #00ffff;
         margin-bottom: 20px;
-        font-size: 28px;
+        font-size: 40px;
         opacity: 0;
         transform: translateY(20px);
         transition: all 0.6s ease;
@@ -441,6 +441,7 @@ img {
         color: #ffffff;
         line-height: 1.6;
         margin-bottom: 15px;
+        font-size: 40px;
         opacity: 0;
         transform: translateY(20px);
         transition: all 0.6s ease;
@@ -817,7 +818,7 @@ img {
 
     .footer-heading {
         color: #00ffff;
-        font-size: 24px;
+        font-size: 26px;
         margin-bottom: 20px;
         text-align: center;
     }
@@ -845,7 +846,7 @@ img {
     .contact-item a {
         color: inherit;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 20px;
         display: flex;
         align-items: center;
         gap: 15px;
@@ -854,7 +855,7 @@ img {
 
     .contact-item i {
         color: #00ffff;
-        font-size: 24px;
+        font-size: 28px;
         width: 40px;
         text-align: center;
     }
