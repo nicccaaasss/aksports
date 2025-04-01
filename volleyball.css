@@ -413,4 +413,21 @@ transition-delay: 0.4s;
         .slide img {
             object-fit: contain;
         }
+            .navbar {
+        padding: 5px 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        margin-top: 10px;
+    }
     }
