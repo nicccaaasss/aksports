@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="icon" href="images/2.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h2>Student Registration</h2>
+    <form id="studentForm">
+        <div class="form-row">
+            <label>Full Name:</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="form-row">
+            <label>Activity:</label>
+            <select id="activity" required>
+                <option value="Yoga">Yoga</option>
+                <option value="Karate">Karate</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Male" required> M
+                <input type="radio" name="gender" value="Female" required> F
+                <input type="radio" name="gender" value="Other" required> O
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label>DOB:</label>
+            <input type="date" id="dob" required>
+        </div>
+
+        <div class="form-row">
+            <label>Age:</label>
+            <input type="number" id="age" required>
+        </div>
+
+        <div class="form-row">
+            <label>Qualification:</label>
+            <input type="text" id="qualification" required>
+        </div>
+
+        <div class="form-row">
+            <label>Father:</label>
+            <input type="text" id="father_name" placeholder="Name" required>
+            <input type="text" id="father_occupation" placeholder="Occupation" required>
+        </div>
+
+        <div class="form-row">
+            <label>Mother:</label>
+            <input type="text" id="mother_name" placeholder="Name" required>
+            <input type="text" id="mother_occupation" placeholder="Occupation" required>
+        </div>
+
+        <div class="form-row">
+            <label>Father Contact:</label>
+            <input type="tel" id="father_phone" placeholder="Phone" required>
+            <input type="email" id="father_email" placeholder="Email" required>
+        </div>
+
+        <div class="form-row">
+            <label>Mother Contact:</label>
+            <input type="tel" id="mother_phone" placeholder="Phone" required>
+            <input type="email" id="mother_email" placeholder="Email" required>
+        </div>
+
+        <div class="form-row">
+            <label>Address , health conditions:</label>
+            <textarea id="address" rows="2" required></textarea>
+        </div>
+
+        <div class="form-row">
+            <label>Photo:</label>
+            <input type="file" id="student_photo" accept="image/*" required>
+        </div>
+
+        <div class="form-row">
+            <label>Aadhar:</label>
+            <input type="file" id="aadhar_photo" accept="image/*" required>
+        </div>
+        
+        <div class="form-row">
+            <label>Gpay no:- 8270915433<BR>Admission Fee:- 1500</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

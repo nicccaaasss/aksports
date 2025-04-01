@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>YOGA</title>
+        <link rel="icon" href="images/2.png" type="image/icon type">
+       <link rel="stylesheet" href="yoga.css">
+    </head>
+    <body class="no-scroll">
+        <div class="intro-screen" id="intro">
+            <div class="intro-text">YOGA</div>
+        </div>
+        <nav class="navbar">
+            <div class="nav-content">
+                <ul class="menu">
+                    <li><a href="ak-home.html" >Home</a></li>
+                    <li>
+                        <a class="active" id="games-link">Games</a>
+                        <div id="dropdown-menu" class="dropdown-menu" style="display: none; position: absolute;">
+                            <a href="ak-karate.html">Karate</a>
+                            <a href="ak-yoga.html" class="active">Yoga</a>
+                            <a href="ak-athletics.html">Athletics</a>
+                            <a href="ak-volleyball.html">Volleyball</a>
+                            <a href="ak-kho-kho.html">Kho-Kho</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="slideshow-container">
+            <button class="nav-button prev" onclick="moveSlide(-1)">❮</button>
+            <button class="nav-button next" onclick="moveSlide(1)">❯</button>
+            <div class="slide-wrapper">
+                <div class="slide active">
+                    <img src="images/yogscr1.jpeg" alt="Yoga" width="100%" >
+                </div>
+                <div class="slide">
+                    <img src="images/yogscr2.jpeg" alt="Yoga" width="100%" >
+                </div>
+                <div class="slide">
+                    <img src="images/yogscr3.jpeg" alt="Yoga" width="100%" >
+                </div>
+            </div>
+            <div class="slide-indicators">
+                <div class="indicator active" onclick="goToSlide(0)"></div>
+                <div class="indicator" onclick="goToSlide(1)"></div>
+                <div class="indicator" onclick="goToSlide(2)"></div>
+            </div>
+        </div>
+        <div class="info-boxes">
+            <div class="status-box">
+                <h2>Status</h2>
+                <div class="status-label">Available</div>
+                <button class="regbtn" onclick="location.href='index.html'">Register admission</button>
+            </div>
+            <div class="timing-box">
+                <h2>Timings</h2>
+                <p>
+                    Tuesday, Thursday, Saturday<br>
+                    5:00pm - 6:00pm<br>
+                    Admission Fee:- RS.1500<br>
+                   Monthly Fee:- RS.1000
+                </p>
+            </div>
+        <script src="yoga.js">
+        </script>
+    </body>
+</html>

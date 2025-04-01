@@ -1,0 +1,216 @@
+<html>
+    <head>
+        <title>AK Sports</title>
+        <link rel="icon" href="images/2.png" type="image/icon type">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="home.css">
+       
+    </head>
+    <body class="no-scroll">
+        <div class="intro-screen" id="intro">
+            <div class="intro-text"><h1>Welcome, AK Stars Sports Academy</h1></div>
+        </div>
+        <nav class="navbar">
+            <div class="nav-content">
+                <ul class="menu">
+                    <li><a href="ak-home.html" class="active">Home</a></li>
+                    <li>
+                        <a class="gam" id="games-link">Games</a>
+                        <div id="dropdown-menu" class="dropdown-menu" style="display: none; position: absolute;">
+                            <a href="ak-karate.html">Karate</a>
+                            <a href="ak-yoga.html">Yoga</a>
+                            <a href="ak-athletics.html">Athletics</a>
+                            <a href="ak-volleyball.html">Volleyball</a>
+                            <a href="ak-kho-kho.html">Kho-Kho</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="slideshow-container">
+            <button class="nav-button prev" onclick="moveSlide(-1)">﹤</button>
+            <button class="nav-button next" onclick="moveSlide(1)">﹥</button>
+            <div class="slide-wrapper">
+                <div class="slide active">
+                    <img src="images/home1.jpg" alt="Karate" width="100%" >
+                </div>
+                <div class="slide">
+                    <img src="images/home2.jpg" alt="Karate" width="100%" >
+                </div>
+                <div class="slide">
+                    <img src="images/home3.jpeg" alt="Yoga" width="100%" >
+                </div>
+                <div class="slide">
+                    <img src="images/home4.jpeg" alt="Yoga" width="100%" >
+                </div>
+            </div>
+            <div class="slide-indicators">
+                <div class="indicator active" onclick="goToSlide(0)"></div>
+                <div class="indicator" onclick="goToSlide(1)"></div>
+                <div class="indicator" onclick="goToSlide(2)"></div>
+                <div class="indicator" onclick="goToSlide(3)"></div>
+            </div>
+        </div>
+
+        <div class="header-section">
+            <h1>AK Sports</h1>
+        </div>
+
+        <div class="info-container">
+            <div class="content-wrapper">
+                <div class="logo-box">
+                    <img src="images/2.png" alt="AK Sports Logo">
+                </div>
+                <div class="content-box">
+                    <h2>Welcome to AK Sports</h2>
+                    <p>Experience the transformative power of martial arts and yoga at AK Sports. Our expert instructors are dedicated to helping you achieve physical excellence and mental wellness through disciplined training and personalized attention.</p>
+                    <p>Whether you're a beginner or an advanced practitioner, our programs are designed to challenge and inspire you on your journey to mastery.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-section">
+            <h1>Location</h1>
+        </div>
+
+        <div class="location-container">
+            <div class="location-wrapper">
+                <div class="location-text">
+                    <div>
+                        <p>This is the place where you will find our <a class="academy" href="https://www.google.com/maps/place/AK+Stars+Sports+Academy/@12.8336027,80.1375722,17z/data=!4m6!3m5!1s0x3a52591d11122939:0xcebfed091846b6cd!8m2!3d12.8336027!4d80.1375722!16s%2Fg%2F11vrbxwwpb?entry=ttu&g_ep=EgoyMDI1MDMyNS4wIKXMDSoASAFQAw%3D%3D">academy</a></p>
+                        <p style="margin-top: 20px;">We are located at:<br>
+                        Police Quarters, SP 3/6, near Police Quarters, Melakottaiyur, Chennai, Tamil Nadu 600127</p>
+                    </div>
+                </div>
+                <div class="map-box">
+                    <img src="images/map.jpeg" alt="Academy Location">
+                </div>
+            </div>
+        </div>
+
+        <div class="header-section">
+            <h1>Timing</h1>
+        </div>
+
+        <div class="timing-container">
+            <div class="sports-wrapper">
+                <div class="timing-box" style="--delay: 1">
+                    <h2>Yoga</h2>
+                    <p>
+                        Tuesday, Thursday, Saturday<br>
+                        5:00pm - 6:00pm
+                    </p>
+                </div>
+                <div class="timing-box" style="--delay: 2">
+                    <h2>Karate</h2>
+                    <p>
+                        Monday, Wednesday, Friday<br>
+                        5:00pm - 6:00pm
+                    </p>
+                </div>
+                <div class="timing-box" style="--delay: 3">
+                    <h2>Athletics</h2>
+                    <p class="coming-soon">Coming Soon</p>
+                </div>
+                <div class="timing-box" style="--delay: 4">
+                    <h2>Volleyball</h2>
+                    <p class="coming-soon">Coming Soon</p>
+                </div>
+                <div class="timing-box" style="--delay: 3">
+                    <h2>Kho-Kho</h2>
+                    <p class="coming-soon">Coming Soon</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-section">
+            <h1>Motto</h1>
+        </div>
+
+        <div class="motto-container">
+            <div class="motto-box">
+                <div class="motto-content">
+                    <h2>Strong Body, Strong Mind.</h2>
+                    <p>Karate builds strength and confidence, while Yoga improves flexibility and calmness. Our training helps you stay fit, focused, and disciplined.</p>
+                </div>
+                <div class="motto-image">
+                    <img src="images/home7.jpeg" alt="Discipline">
+                </div>
+            </div>
+
+            <div class="motto-box">
+                <div class="motto-content">
+                    <h2>Learn, Practice, Improve.</h2>
+                    <p>Whether you're a beginner or experienced, our academy helps you grow. Karate teaches self-defense and discipline, while Yoga brings balance and relaxation.</p>
+                </div>
+                <div class="motto-image">
+                    <img src="images/home9.jpeg" alt="Excellence">
+                </div>
+            </div>
+
+            <div class="motto-box">
+                <div class="motto-content">
+                    <h2>Fitness for Everyone.</h2>
+                    <p>Kids, adults, and seniors—anyone can join! Karate builds power and confidence, and Yoga keeps the body flexible and the mind stress-free.</p>
+                </div>
+                <div class="motto-image">
+                    <img src="images/home6.jpeg" alt="Respect">
+                </div>
+            </div>
+
+            <div class="motto-box">
+                <div class="motto-content">
+                    <h2>Mind Over Matter.</h2>
+                    <p>Success in Karate and Yoga comes from patience and practice. We help you build self-control, focus, and a strong, positive mindset.</p>
+                </div>
+                <div class="motto-image">
+                    <img src="images/home5.jpeg" alt="Growth">
+                </div>
+            </div>
+
+            <div class="motto-box">
+                <div class="motto-content">
+                    <h2>One Goal, One Journey.</h2>
+                    <p>Karate and Yoga may be different, but they both help you grow. Train with us to become healthier, stronger, and more confident every day.</p>
+                </div>
+                <div class="motto-image">
+                    <img src="images/home8.jpeg" alt="Community">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <div class="footer-content">
+                <h2 class="footer-heading">Contact us through:</h2>
+                <div class="footer-grid">
+                    <div class="contact-item">
+                        <a href="tel:8270915433">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 8270915433</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="mailto:akstarssportsacademy@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>akstarssportsacademy@gmail.com</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://www.instagram.com/ak_stars_2k23/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span>ak_stars_2k23</span>
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://x.com/Akstarsspo90631" target="_blank">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <span>@Akstarsspo90631</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="home.js"></script>
+    </body>
+</html>

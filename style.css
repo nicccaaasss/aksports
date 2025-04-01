@@ -1,0 +1,134 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+    overflow: auto;
+}
+
+/* Form Container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 8px ;
+    background: rgba(22, 22, 22, 0.8);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    color: cyan;
+    /* Slide-up animation */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+/* Slide-Up Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: cyan;
+    font-size: 18px;
+}
+
+/* Two-Column Layout */
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+/* Labels */
+label {
+    width: 30%;
+    font-weight: bold;
+    color: rgb(211, 211, 211);
+    font-size: 14px;
+}
+
+/* Inputs */
+input, select, textarea {
+    width: 65%;
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    border-radius: 18px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+}
+input, select, textarea:focus{
+    background-color: black;
+}
+/* Compact Textareas */
+textarea {
+    resize: vertical;
+}
+
+/* Radio Group */
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* File Inputs */
+input[type="file"] {
+    padding: 3px;
+    font-size: 12px;
+}
+
+/* Compact Buttons */
+button {
+    width: 100%;
+    padding: 8px;
+    background: transparent;
+    color: cyan;
+    font-size: 14px;
+    border: 2px solid cyan;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: rgba(0, 255, 255, 0.11);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 3px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+    }
+}

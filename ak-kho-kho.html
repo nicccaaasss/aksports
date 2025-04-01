@@ -1,0 +1,66 @@
+ <html>
+    <head>
+        <title>KHO-KHO</title>
+        <link rel="icon" href="images/2.png" type="image/icon type">
+       <link rel="stylesheet" href="khokho.css">
+    </head>
+    <body class="no-scroll">
+        <div class="intro-screen" id="intro">
+            <div class="intro-text">KHO-KHO</div>
+        </div>
+        <nav class="navbar">
+            <div class="nav-content">
+                <ul class="menu">
+                    <li><a href="ak-home.html" >Home</a></li>
+                    <li>
+                        <a class="active" id="games-link">Games</a>
+                        <div id="dropdown-menu" class="dropdown-menu" style="display: none; position: absolute;">
+                            <a href="ak-karate.html">Karate</a>
+                            <a href="ak-yoga.html">Yoga</a>
+                            <a href="ak-athletics.html">Athletics</a>
+                            <a href="ak-volleyball.html">Volleyball</a>
+                            <a href="ak-kho-kho.html" class="active">Kho-Kho</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="slideshow-container">
+            <button class="nav-button prev" onclick="moveSlide(-1)">❮</button>
+            <button class="nav-button next" onclick="moveSlide(1)">❯</button>
+            <div class="slide-wrapper">
+                <div class="slide active">
+                    <img src="images/kho-kho-1.png" alt="khokho" width="100%" >
+                </div>
+                <div class="slide">
+                    <img src="images/kho-kho-2.png" alt="Khokho" width="100%" >
+                </div>
+                <div class="slide">
+                    <img src="images/kho-kho-3.png" alt="khokho" width="100%" >
+                </div>
+            </div>
+            <div class="slide-indicators">
+                <div class="indicator active" onclick="goToSlide(0)"></div>
+                <div class="indicator" onclick="goToSlide(1)"></div>
+                <div class="indicator" onclick="goToSlide(2)"></div>
+            </div>
+        </div>
+
+
+       <div class="info-boxes">
+            <div class="status-box">
+                <h2>Status</h2>
+                <div class="status-label" style="font-style: italic;">Coming Soon</div>
+            </div>
+            <div class="timing-box">
+                <h2>Timings</h2>
+                <p>-</p>
+            </div>
+        </div>
+
+        <script src="kho.js">
+          
+        </script>
+    </body>
+</html>
