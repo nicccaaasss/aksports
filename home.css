@@ -50,7 +50,7 @@ img {
     color: cyan;
 }
 .intro-text {
-   font-size: xx-large;
+    font-size: 2rem;
     font-weight: bold;
     opacity: 0;
     animation: fadeIn 1.5s ease-in forwards;
@@ -115,7 +115,7 @@ img {
         text-decoration: none;
         color: #ffffff;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 18px
         padding: 8px 0;
         position: relative;
         transition: color 0.3s ease;
@@ -195,6 +195,13 @@ img {
         color: #00ffff;
         padding-left: 30px;
     }
+.timing-box h2, .timing-box p {
+    font-size: 18px; /* Increase heading and paragraph size in timing box */
+}
+
+.motto-content h2, .motto-content p {
+    font-size: 18px; /* Increase heading and paragraph size in motto content */
+}
 
     @media screen and (max-width: 768px) {
         .dropdown-menu {
@@ -225,28 +232,29 @@ img {
             visibility: visible;
         }
             body {
-        font-size: 18px; /* Increase base font size */
+        font-size: 20px;  /* Increase base font size */
     }
 
     .intro-text {
-        font-size: 2rem; /* Adjust intro text size */
+         font-size: 2.5rem;
     }
 
     .menu a {
-        font-size: 18px; /* Increase menu link size */
+        font-size: 20px;
     }
 
     .timing-box h2, .timing-box p {
-        font-size: 18px; /* Increase heading and paragraph size in timing box */
+        font-size: 20px; /* Further increase heading and paragraph size in timing box for mobile */
     }
 
     .motto-content h2, .motto-content p {
-        font-size: 18px; /* Increase heading and paragraph size in motto content */
+        font-size: 20px; /* Further increase heading and paragraph size in motto content for mobile */
     }
     }
 
     /* Add some spacing for the body content */
     body {
+        font-size: 18px; /* Increase base font size */
         margin-top: 0;
         font-family: Arial, sans-serif;
         background-color: #000000;
@@ -254,6 +262,10 @@ img {
         overflow-x: auto; /* Changed from hidden to auto */
         min-width: 100%;
         position: relative;
+    }
+   .menu {
+        flex-direction: row;
+        gap: 20px;
     }
 
     /* Add style for body when intro is active */
@@ -267,7 +279,7 @@ img {
     .slideshow-container {
         position: relative;
         width: 100%;
-        height: 90vh;
+        height: 60vh;
         overflow: hidden;
         z-index: 0;
         margin-bottom: 40px; /* Add margin to maintain spacing */
@@ -281,7 +293,7 @@ img {
 
     .slide {
         min-width: 100%;
-        height: 90vh;
+        height: 60vh;
         position: relative;
         display: flex;
         justify-content: center;
@@ -293,6 +305,9 @@ img {
         width: 100%;
         height: 100%;
         object-fit: fill;
+    }
+    .navbar {
+        padding: 15px 0;
     }
 
     .nav-button {
@@ -349,9 +364,9 @@ img {
         background-color: #000000;
     }
 
-    .content-wrapper {
+    .content-wrapper, .location-wrapper {
         display: flex;
-        gap: 30px;
+        gap: 20px;
         max-width: 1400px;
         margin: 0 auto;
         width: 100%;
@@ -364,7 +379,7 @@ img {
         backdrop-filter: blur(8px);
         border-radius: 15px;
         padding: 30px;
-        height: 400px;
+        height: auto;
         box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         overflow-y: none;
     }
@@ -595,7 +610,7 @@ img {
     }
 
     .timing-container {
-        padding: 40px;
+        padding: 20px;
         position: relative;
         background-color: black;
         overflow: hidden;
@@ -606,7 +621,7 @@ img {
 
     .sports-wrapper {
         display: flex;
-        gap: 30px;
+        gap: 20px;
         padding: 20px;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -626,7 +641,9 @@ img {
     }
 
     .timing-box {
-        min-width: 300px;
+        min-width: 250px;
+        flex: 0 0 auto;
+        height: auto;
         background: rgba(17, 17, 17, 0.8);
         backdrop-filter: blur(8px);
         border-radius: 15px;
@@ -666,6 +683,7 @@ img {
         opacity: 0.7;
     }
 
+
     .motto-container {
         padding: 40px;
         position: relative;
@@ -677,7 +695,7 @@ img {
     .motto-box {
         display: flex;
         width: 80%;
-        margin: 40px auto;
+        margin: 20px auto;
         background: rgba(17, 17, 17, 0.8);
         backdrop-filter: blur(8px);
         border-radius: 15px;
@@ -688,16 +706,17 @@ img {
         transition: all 0.8s ease;
         min-height: 350px;
         gap: 30px;
+        flex-direction: column;
     }
 
     .motto-box:nth-child(even) {
-        flex-direction: row-reverse;
+        flex-direction: column;
         margin-left: 20%;
     }
 
     .motto-box:nth-child(odd) {
         margin-right: 20%;
-        flex-direction: row;
+        flex-direction: column-reverse;
     }
 
     .motto-box.in-view {
@@ -865,21 +884,21 @@ img {
         }
 
         /* Make other sections match laptop layout */
-        .content-wrapper,
-        .location-wrapper {
-            flex-direction: row;
-            gap: 20px;
-            padding: 20px;
-        }
+    .content-wrapper,
+    .location-wrapper {
+        flex-direction: row;
+        gap: 20px;
+        padding: 20px;
+    }
 
-        .logo-box, 
-        .content-box,
-        .map-box, 
-        .location-text {
-            min-height: unset;
-            height: auto;
-            width: 50%;
-        }
+    .logo-box,
+    .content-box,
+    .map-box,
+    .location-text {
+        min-height: unset;
+        height: auto;
+        width: 100%;
+    }
 
         .timing-container {
             padding: 20px;
@@ -912,7 +931,7 @@ img {
 
         .motto-content,
         .motto-image {
-            width: 50%;
+            width: 100%;
         }
 
         .motto-image {
@@ -963,29 +982,29 @@ img {
 
         /* Further reduce text sizes for mobile */
         .header-section h1 {
-            font-size: 20px;
+            font-size: 24px;
         }
 
         .timing-box h2 {
-            font-size: 14px;
-            margin-bottom: 6px;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
         .timing-box p {
-            font-size: 10px;
-            line-height: 1.2;
+            font-size: 20px;
+            line-height: 1.6;
         }
 
         .footer-heading {
-            font-size: 18px;
+            font-size: 20px;
         }
 
         .contact-item a {
-            font-size: 11px;
+            font-size: 12px;
         }
 
         .contact-item i {
-            font-size: 14px;
+            font-size: 16px;
         }
 
         /* Dynamic text sizing for medium screens */
