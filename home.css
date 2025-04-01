@@ -711,13 +711,13 @@ img {
     }
 
     .motto-box:nth-child(even) {
-        flex-direction: column;
+        flex-direction: row-reverse;
         margin-left: 20%;
     }
 
     .motto-box:nth-child(odd) {
         margin-right: 20%;
-        flex-direction: column-reverse;
+        flex-direction: row;
     }
 
     .motto-box.in-view {
