@@ -683,109 +683,138 @@ img {
         width: 100%;
     }
 
-    .motto-box {
-        display: flex;
-        width: 80%;
-        margin: 20px auto;
-        background: rgba(17, 17, 17, 0.8);
-        backdrop-filter: blur(8px);
-        border-radius: 15px;
-        padding: 40px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        opacity: 0;
-        transform: translateY(100px);
-        transition: all 0.8s ease;
-        min-height: 350px;
-        gap: 30px;
-        flex-direction: column;
-    }
+.motto-box {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    background: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s ease;
+    min-height: 350px;
+    gap: 30px;
+    flex-direction: column;
+}
 
-    .motto-box:nth-child(even) {
-        flex-direction: row-reverse;
-        margin-left: 20%;
-    }
+.motto-box:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-left: 20%;
+}
 
-    .motto-box:nth-child(odd) {
-        margin-right: 20%;
-        flex-direction: row;
-    }
+.motto-box:nth-child(odd) {
+    margin-right: 20%;
+    flex-direction: row;
+}
+I will now commit these changes to the repository for you.To revert the motto-box to its previous state, you can use the following CSS:
 
-    .motto-box.in-view {
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: calc(var(--order) * 0.2s); /* Added variable delay */
-    }
+CSS
+.motto-box {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    background: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s ease;
+    min-height: 350px;
+    gap: 30px;
+    flex-direction: column;
+}
 
-    .motto-content {
-        flex: 1;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-    }
+.motto-box:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-left: 20%;
+}
 
-    .motto-box:nth-child(even) .motto-content {
-        border-right: none;
-        border-left: 1px solid rgba(0, 255, 255, 0.1);
-    }
+.motto-box:nth-child(odd) {
+    margin-right: 20%;
+    flex-direction: row;
+}
 
-    .motto-image {
-        flex: 1.2; /* Reduced from 1.5 */
-        padding: 15px;
-        height: 250px; /* Fixed height */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.3);  /* Slightly darker background */
-        border-radius: 8px;
-        margin: 10px;  /* Add some margin */
-        max-height: 500px; /* Added max-height */
-        overflow: hidden; /* Added overflow control */
-    }
+.motto-box.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--order) * 0.2s); /* Added variable delay */
+}
 
-    .motto-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain; /* Changed from cover */
-        border-radius: 8px;
-        max-height: 400px;  /* Set maximum height for images */
-    }
+.motto-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
 
-    .motto-content h2 {
-        margin-bottom: 25px;
-        color: #00ffff;
-        font-size: 24px; /* Reduced from 32px */
-    }
+.motto-box:nth-child(even) .motto-content {
+    border-right: none;
+    border-left: 1px solid rgba(0, 255, 255, 0.1);
+}
 
-    .motto-content h2 {
-        color: #00ffff;
-        margin-bottom: 15px;
-        font-size: 24px;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.6s ease;
-    }
+.motto-image {
+    flex: 1.2; /* Reduced from 1.5 */
+    padding: 15px;
+    height: 250px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);  /* Slightly darker background */
+    border-radius: 8px;
+    margin: 10px;  /* Add some margin */
+    max-height: 500px; /* Added max-height */
+    overflow: hidden; /* Added overflow control */
+}
 
-    .motto-content p {
-        color: #ffffff;
-        line-height: 1.6;
-        font-size: 18px;
-        margin-bottom: 12px;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.6s ease;
-    }
+.motto-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Changed from cover */
+    border-radius: 8px;
+    max-height: 400px;  /* Set maximum height for images */
+}
 
-    .motto-box.in-view .motto-content h2 {
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: 0.3s;
-    }
+.motto-content h2 {
+    margin-bottom: 25px;
+    color: #00ffff;
+    font-size: 24px; /* Reduced from 32px */
+}
 
-    .motto-box.in-view .motto-content p {
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: 0.6s;
-    }
+.motto-content h2 {
+    color: #00ffff;
+    margin-bottom: 15px;
+    font-size: 24px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.motto-content p {
+    color: #ffffff;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 12px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.motto-box.in-view .motto-content h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+.motto-box.in-view .motto-content p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
 
     .footer-box {
         width: 100%;
@@ -854,7 +883,44 @@ img {
         background: rgba(0, 255, 255, 0.1);
         color: #00ffff;
     }
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 24px;  /* Increase base font size */
+    }
 
+    .intro-text {
+        font-size: 3rem;  /* Increase intro text size */
+    }
+
+    .menu a {
+        font-size: 22px;  /* Increase menu font size */
+    }
+
+    .timing-box h2, .timing-box p {
+        font-size: 22px;  /* Increase timing box font size */
+    }
+
+    .motto-content h2, .motto-content p {
+        font-size: 22px;  /* Increase motto content font size */
+    }
+
+    .content-box h2, .content-box p {
+        font-size: 22px;  /* Increase content box font size */
+    }
+
+    .footer-heading {
+        font-size: 26px;  /* Increase footer heading size */
+    }
+
+    .contact-item a {
+        font-size: 20px;  /* Increase contact item font size */
+    }
+
+    .contact-item i {
+        font-size: 28px;  /* Increase contact item icon size */
+    }
+}
     @media screen and (max-width: 768px) {
         .navbar {
             padding: 15px 0;
