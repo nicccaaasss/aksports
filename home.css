@@ -1305,13 +1305,7 @@ img {
     }
     .gam:hover{
         cursor: pointer;
-    }    .content-box p {
-        font-size: 20px; /* Further increase paragraph size */
-    }
-
-    .content-box h2 {
-        font-size: 24px; /* Further increase heading size */
-    }
+    } 
 }
 
     /* Mobile Responsive Styles */
@@ -1445,15 +1439,6 @@ img {
             height: 50%;
         }
 
-        .content-box h2 {
-            font-size: calc(12px + 0.5vw);
-        }
-
-        .content-box p {
-            font-size: calc(10px + 0.3vw);
-            line-height: 1.3;
-        }
-
         .location-text p {
             font-size: calc(10px + 0.4vw);
             line-height: 1.3;
@@ -1496,15 +1481,6 @@ img {
 
         .intro-text {
             font-size: 1.5rem;
-        }
-
-        .content-box h2 {
-            font-size: 14px;
-        }
-
-        .content-box p {
-            font-size: 11px;
-            line-height: 1.3;
         }
 
         .location-text p {
@@ -1899,17 +1875,6 @@ img {
             transform: translateX(-50%);
         }
 
-        .content-box h2 {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-
-        .content-box p {
-            font-size: 12px;
-            line-height: 1.4;
-            margin-bottom: 8px;
-        }
-
         .location-text p {
             font-size: 13px;
             line-height: 1.4;
@@ -1918,14 +1883,6 @@ img {
     }
 
     @media screen and (max-width: 480px) {
-        .content-box h2 {
-            font-size: 14px;
-        }
-
-        .content-box p {
-            font-size: 11px;
-            line-height: 1.3;
-        }
 
         .location-text p {
             font-size: 11px;
@@ -1942,14 +1899,6 @@ img {
 
     .menu a {
         font-size: 20px; /* Further increase menu link size */
-    }
-
-    .timing-box h2, .timing-box p {
-        font-size: 20px; /* Further increase heading and paragraph size in timing box */
-    }
-
-    .motto-content h2, .motto-content p {
-        font-size: 20px; /* Further increase heading and paragraph size in motto content */
     }
 }
     }
