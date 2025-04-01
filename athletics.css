@@ -416,12 +416,3 @@ transition-delay: 0.4s;
             object-fit: contain;
         }
     }
-    @media screen and (min-width: 200px) and (max-width: 480px) {
-        .menu a {
-        font-size: 24px;  /* Slightly smaller for very small screens */
-    }
-
-        .dropdown-menu a {
-        font-size: 18px;  /* Slightly smaller for very small screens */
-    }
-    }
