@@ -247,7 +247,7 @@ img {
         cursor: pointer;
         border: none;
         border-radius: 50%;
-        font-size: 24px;
+        font-size: 18px;
         z-index: 10;
         transition: all 0.3s ease;
     }
