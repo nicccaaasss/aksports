@@ -196,11 +196,11 @@ img {
         padding-left: 30px;
     }
 .timing-box h2, .timing-box p {
-    font-size: 18px; /* Increase heading and paragraph size in timing box */
+    font-size: 20px; /* Increase heading and paragraph size in timing box */
 }
 
 .motto-content h2, .motto-content p {
-    font-size: 18px; /* Increase heading and paragraph size in motto content */
+    font-size: 20px; /* Increase heading and paragraph size in motto content */
 }
 
     @media screen and (max-width: 768px) {
@@ -653,12 +653,15 @@ img {
     .timing-box h2 {
         color: #00ffff;
         margin-bottom: 20px;
-        font-size: 24px;
+        font-size: 35px;
+                text-align: center;
     }
 
     .timing-box p {
         color: #ffffff;
         line-height: 1.6;
+        font-size: 35px;
+                text-align: center;
     }
 
     .coming-soon-box {
@@ -691,12 +694,15 @@ img {
     .coming-soon-box h2 {
         color: #00ffff;
         margin-bottom: 20px;
-        font-size: 24px;
+        font-size: 35px;
+                text-align: center;
     }
 
     .coming-soon-box p {
         color: #ffffff;
         line-height: 1.6;
+        font-size: 35px;
+        text-align: center;
     }
 
     .motto-container {
@@ -1026,12 +1032,14 @@ img {
     .timing-box h2 {
         color: #00ffff;
         margin-bottom: 20px;
-        font-size: 24px;
+        font-size: 35px;
     }
 
     .timing-box p {
         color: #ffffff;
         line-height: 1.6;
+        text-align: center;
+        font-size: 35px;
     }
 
         .motto-box,
@@ -1071,13 +1079,16 @@ img {
         }
 
         .timing-box h2 {
-            font-size: 24px;
+            font-size: 35px;
             margin-bottom: 10px;
+            text-align: center;
+            
         }
 
         .timing-box p {
-            font-size: 20px;
+            font-size: 35px;
             line-height: 1.6;
+            text-align: center;
         }
 
         .footer-heading {
@@ -1098,13 +1109,15 @@ img {
         }
 
         .timing-box h2 {
-            font-size: 24px;
+            font-size: 35px;
             margin-bottom: 10px;
+            text-align: center;
         }
 
         .timing-box p {
-            font-size: 20px;
+            font-size: 35px;
             line-height: 1.6;
+            text-align: center;
         }
 
         .footer-heading {
@@ -1142,13 +1155,15 @@ img {
         }
 
         .timing-box h2 {
-                    font-size: 20px;
+                    font-size: 35px;
                     margin-bottom: 12px;
+            text-align: center;
         }
 
         .timing-box p {
-                    font-size: 16px;
+                    font-size: 35px;
                     line-height: 1.6;
+            text-align: center;
         }
 
         /* Adjust content and location wrapper layout */
@@ -1408,12 +1423,14 @@ img {
     .timing-box h2 {
         color: #00ffff;
         margin-bottom: 20px;
-        font-size: 24px;
+        font-size: 35px;
     }
 
     .timing-box p {
         color: #ffffff;
         line-height: 1.6;
+        text-align: center;
+        font-size: 35px;
     }
 }
 
@@ -1589,12 +1606,14 @@ img {
     .timing-box h2 {
         color: #00ffff;
         margin-bottom: 20px;
-        font-size: 24px;
+        font-size: 35px;
+        text-align: center;
     }
 
     .timing-box p {
         color: #ffffff;
         line-height: 1.6;
+        text-align: center;
     }
     }
 
@@ -1667,12 +1686,13 @@ img {
     .timing-box h2 {
         color: #00ffff;
         margin-bottom: 20px;
-        font-size: 24px;
+        font-size: 35px;
     }
 
     .timing-box p {
         color: #ffffff;
         line-height: 1.6;
+        text-align: center;
     }
     }
 
