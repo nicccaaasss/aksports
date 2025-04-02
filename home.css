@@ -1067,12 +1067,15 @@ img {
                     margin-bottom: 15px;
         }
 
-        .content-box p,
-        .motto-content p,
-        .location-text p {
+        .content-box p {
                     font-size: 32px;
                     line-height: 1.6;
                     margin-bottom: 12px;
+        }
+                .motto-content p, .location-text p {
+                    font-size: 35px;
+                    line-height: 1.6;
+                    margin-bottom: 12px; 
         }
 
         .timing-box h2 {
@@ -1487,8 +1490,8 @@ img {
             font-size: 1.5rem;
         }
 
-        .location-text p, .content-box p {
-            font-size: 32px;
+        .location-text p, {
+            font-size: 35px;
             line-height: 1.6;
             margin-bottom: 6px;
         }
@@ -1880,7 +1883,7 @@ img {
         }
 
         .location-text p {
-            font-size: 32px;
+            font-size: 35px;
             line-height: 1.6;
             margin-bottom: 8px;
         }
@@ -1888,8 +1891,8 @@ img {
 
     @media screen and (max-width: 480px) {
 
-        .location-text p, .content-box p {
-            font-size: 32px;
+        .location-text p, {
+            font-size: 35px;
             line-height: 1.6;
             margin-bottom: 6px;
         }
