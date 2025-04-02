@@ -706,7 +706,7 @@ img {
                 text-align: center;
     }
 
-    .coming-soon-box p {
+    .coming-soon p {
         color: #ffffff;
         line-height: 1.6;
         font-size: 35px;
@@ -996,7 +996,7 @@ img {
         margin-bottom: 20px;
         font-size: 35px;
     }
-    .coming-soon-box p {
+    .coming-soon p {
         color: grey; /* Change text color to grey for mobile view */
     }
     .timing-box p {
@@ -1391,7 +1391,7 @@ img {
         margin-bottom: 20px;
         font-size: 35px;
     }
-    .coming-soon-box p {
+    .coming-soon p {
         color: grey; /* Change text color to grey for mobile view */
     }
     .timing-box p {
@@ -1579,7 +1579,7 @@ img {
         font-size: 35px;
         text-align: center;
     }
-    .coming-soon-box p {
+    .coming-soon p {
         color: grey; /* Change text color to grey for mobile view */
     }
     .timing-box p {
