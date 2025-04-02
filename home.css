@@ -4,9 +4,6 @@
     object-fit: cover; /* Ensure good fit without excessive compression */
 }
 
-
-
-
 /* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
     height: 10px; /* Height of the scrollbar */
@@ -776,30 +773,6 @@ img {
     object-fit: contain; /* Changed from cover */
     border-radius: 8px;
     max-height: 400px;  /* Set maximum height for images */
-}
-.motto-box:nth-child(even) {
-    flex-direction: row-reverse;
-    margin-left: 20%;
-}
-
-.motto-box:nth-child(odd) {
-    margin-right: 20%;
-    flex-direction: row;
-}
-
-.motto-box:nth-child(even) {
-    flex-direction: row-reverse;
-    margin-left: 20%;
-}
-
-.motto-box:nth-child(odd) {
-    margin-right: 20%;
-    flex-direction: row;
-}
-
-.motto-box:nth-child(even) .motto-content {
-    border-right: none;
-    border-left: 1px solid rgba(0, 255, 255, 0.1);
 }
 
 .motto-image img {
