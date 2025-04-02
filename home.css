@@ -604,7 +604,6 @@ img {
     }
 
     .sports-wrapper {
-        display: flex;
         gap: 20px;
         padding: 20px;
         overflow-x: auto;
@@ -988,7 +987,6 @@ img {
         }
 
         .sports-wrapper {
-            display: flex;
             padding: 20px;
             justify-content: flex-start;
             flex-wrap: nowrap;
