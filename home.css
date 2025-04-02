@@ -604,7 +604,6 @@ img {
     }
 
     .sports-wrapper {
-        display: flex;
         gap: 20px;
         padding: 20px;
         overflow-x: auto;
@@ -950,7 +949,6 @@ img {
     }
 
         .sports-wrapper {
-            display: flex;
             padding: 20px;
             justify-content: flex-start;
             flex-wrap: nowrap;
@@ -1350,6 +1348,14 @@ img {
         display: flex; /* Ensure vertical layout */
         flex-direction: column; /* Stack boxes vertically */
     }
+    .sports-wrapper {
+        flex-direction: column; /* Stack boxes vertically */
+        gap: 20px;
+        padding: 20px;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-y: auto; /* Ensure vertical scrolling */
+        width: 100%;
+    }
     .timing-box {
         min-width: 250px;
         flex: 0 0 auto;
@@ -1539,6 +1545,14 @@ img {
         display: flex; /* Ensure vertical layout */
         flex-direction: column; /* Stack boxes vertically */
     }
+            .sports-wrapper {
+        flex-direction: column; /* Stack boxes vertically */
+        gap: 20px;
+        padding: 20px;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-y: auto; /* Ensure vertical scrolling */
+        width: 100%;
+    }
             .timing-box {
         min-width: 250px;
         flex: 0 0 auto;
@@ -1624,6 +1638,14 @@ img {
         width: 100%;
         display: flex; /* Ensure vertical layout */
         flex-direction: column; /* Stack boxes vertically */
+    }
+            .sports-wrapper {
+        flex-direction: column; /* Stack boxes vertically */
+        gap: 20px;
+        padding: 20px;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-y: auto; /* Ensure vertical scrolling */
+        width: 100%;
     }
             .timing-box {
         min-width: 250px;
