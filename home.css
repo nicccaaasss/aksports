@@ -210,9 +210,9 @@ img {
         }
         
         .dropdown-menu a {
-            padding: 15px 25px;
+            padding: 12.5px 20px;
             text-align: left;
-            font-size: 15px;
+            font-size: 20px;
         }
     }
 
@@ -375,11 +375,28 @@ img {
         box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         overflow-y: none;
     }
+    .content-box, .location-box {
+        width: 100%;
+        padding: 20px;
+        background: rgba(17, 17, 17, 0.8);
+        backdrop-filter: blur(8px);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        margin-bottom: 20px; /* Add some spacing between the boxes */
+    }
+
+    .content-box h2, .content-box p, .location-box h2, .location-box p {
+        color: #ffffff;
+        margin-bottom: 15px;
+    }
 
     .logo-box {
+        width: 100%;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 20px;
         opacity: 0;
         animation: slideInLeft 1s ease forwards;
     }
@@ -387,6 +404,7 @@ img {
     .logo-box img {
         max-width: 100%;
         height: auto;
+        object-fit: cover;
         opacity: 0;
         transform: translateY(30px);
         transition: all 0.8s ease;
@@ -399,6 +417,8 @@ img {
     }
 
     .content-box {
+        width: 100%;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         opacity: 0;
@@ -709,9 +729,7 @@ img {
     margin-right: 20%;
     flex-direction: row;
 }
-I will now commit these changes to the repository for you.To revert the motto-box to its previous state, you can use the following CSS:
 
-CSS
 .motto-box {
     display: flex;
     width: 80%;
@@ -942,7 +960,7 @@ CSS
         /* Make other sections match laptop layout */
     .content-wrapper,
     .location-wrapper {
-        flex-direction: row;
+        flex-direction: column;
         gap: 20px;
         padding: 20px;
     }
@@ -1095,8 +1113,7 @@ CSS
         /* Adjust content and location wrapper layout */
         .content-wrapper,
         .location-wrapper {
-            flex-direction: row;
-            gap: 15px;
+            flex-direction: column;
         }
 
         .logo-box,
@@ -1123,8 +1140,7 @@ CSS
         /* Make content and location wrappers match motto layout */
         .content-wrapper,
         .location-wrapper {
-            width: 90%;
-            margin: 20px auto;
+            display: 20px;
             flex-direction: column;
         }
 
@@ -1153,9 +1169,9 @@ CSS
 
         .content-wrapper,
         .location-wrapper {
-            width: 70%;
+            width: 100%;
             margin: 40px auto;
-            flex-direction: row;
+            flex-direction: column;
             min-height: 300px;
             height: auto;
             gap: 20px;
@@ -1163,18 +1179,14 @@ CSS
 
         .logo-box, 
         .map-box {
-            width: 40%;
+            width: 100%;
             min-height: 300px;
             height: auto;
             order: 1;
-        }
-
-        .content-box, 
-        .location-text {
-            width: 60%;
-            min-height: 300px;
-            height: auto;
-            order: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
         }
 
         .content-wrapper:nth-child(even),
