@@ -358,23 +358,12 @@ img {
 
     .content-wrapper, .location-wrapper {
         display: flex;
-        gap: 20px;
         max-width: 1400px;
         margin: 0 auto;
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
     }
 
-    .logo-box, .content-box {
-        flex: 1;
-        background: rgba(17, 17, 17, 0.8);
-        backdrop-filter: blur(8px);
-        border-radius: 15px;
-        padding: 30px;
-        height: auto;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        overflow-y: none;
-    }
     .content-box, .location-box {
         width: 100%;
         padding: 20px;
@@ -438,6 +427,7 @@ img {
     .logo-box img {
         max-width: 100%;
         height: auto;
+        object-fit: cover;
     }
 
     .content-box h2 {
@@ -523,22 +513,6 @@ img {
     @keyframes fadeIn {
         from { opacity: 0; }
         to { opacity: 1; }
-    }
-
-    /* Add styles for the new location section */
-    .location-container {
-        padding: 40px;
-        position: relative;
-        background-color: #000000;
-    }
-
-    .location-wrapper {
-        display: flex;
-        gap: 30px;
-        max-width: 1400px;
-        margin: 0 auto;
-        width: 100%;
-        flex-direction: row; /* Changed from row-reverse */
     }
 
     .map-box {
@@ -961,7 +935,6 @@ img {
     .content-wrapper,
     .location-wrapper {
         flex-direction: column;
-        gap: 20px;
         padding: 20px;
     }
 
@@ -1180,9 +1153,7 @@ img {
         .logo-box, 
         .map-box {
             width: 100%;
-            min-height: 300px;
             height: auto;
-            order: 1;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1310,38 +1281,27 @@ img {
         .logo-box,
         .map-box {
             width: 30%;  /* Slightly smaller for better text space */
-            display: contents;
+            display: flex;
         }
 
         .content-box,
         .location-text {
             width: 60%;
-            display: contents;
+            display: flex;
         }
-
-        .content-wrapper,
-        .location-wrapper {
-            width: 95%;
-        }
-
+        
         .logo-box, .map-box,
         .content-box, .location-text {
-            width: 50%;
-            min-height: 200px;
+            width: 100%;
+            height: auto;
             margin-bottom: 15px;
-        }
-
-        .content-wrapper,
-        .location-wrapper {
-            width: 90%;
-            min-height: 250px;
         }
 
         .logo-box,
         .map-box,
         .content-box,
         .location-text {
-            min-height: 250px;
+            height: auto;
         }
     }
 
