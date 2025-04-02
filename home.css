@@ -217,7 +217,6 @@ img {
 
     .motto-content {
         order: 2; /* Ensure text appears below the image */
-        margin: 20px;
     }
 
     .motto-image {
@@ -756,6 +755,12 @@ img {
 .motto-content h2 {
     font-size: 20px; /* Increase heading and paragraph size in motto content */
     color: #00ffff; /* Set color to cyan */
+    margin-bottom: 15px; /* Add margin at the bottom to create gap */
+}
+
+.motto-content p {
+    font-size: 20px; /* Increase heading and paragraph size in motto content */
+    margin-top: 15px; /* Add margin at the top to create gap */
 }
 .motto-image {
     order: 1; /* Ensure image appears at the top */
