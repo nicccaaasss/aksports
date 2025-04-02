@@ -214,6 +214,17 @@ img {
             text-align: left;
             font-size: 20px;
         }
+            .motto-box {
+        flex-direction: column; /* Ensure flex direction is column for mobile view */
+    }
+
+    .motto-content {
+        order: 2; /* Ensure text appears below the image */
+    }
+
+    .motto-image {
+        order: 1; /* Ensure image appears at the top */
+    }
     }
 
     @media screen and (max-width: 768px) {
@@ -715,56 +726,18 @@ img {
 
 .motto-box {
     display: flex;
-    width: 80%;
-    margin: 20px auto;
-    background: rgba(17, 17, 17, 0.8);
-    backdrop-filter: blur(8px);
-    border-radius: 15px;
+    flex-direction: column; /* Ensure flex direction is column */
     padding: 40px;
+    background: rgba(17, 17, 17, 0.8);
+    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin: 20px auto;
+    width: 80%;
+    min-height: 350px;
     opacity: 0;
     transform: translateY(100px);
     transition: all 0.8s ease;
-    min-height: 350px;
     gap: 30px;
-    flex-direction: column;
-}
-
-.motto-box:nth-child(even) {
-    flex-direction: row-reverse;
-    margin-left: 20%;
-}
-
-.motto-box:nth-child(odd) {
-    margin-right: 20%;
-    flex-direction: row;
-}
-
-.motto-box {
-    display: flex;
-    width: 80%;
-    margin: 20px auto;
-    background: rgba(17, 17, 17, 0.8);
-    backdrop-filter: blur(8px);
-    border-radius: 15px;
-    padding: 40px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    opacity: 0;
-    transform: translateY(100px);
-    transition: all 0.8s ease;
-    min-height: 350px;
-    gap: 30px;
-    flex-direction: column;
-}
-
-.motto-box:nth-child(even) {
-    flex-direction: row-reverse;
-    margin-left: 20%;
-}
-
-.motto-box:nth-child(odd) {
-    margin-right: 20%;
-    flex-direction: row;
 }
 
 .motto-box.in-view {
@@ -774,29 +747,59 @@ img {
 }
 
 .motto-content {
+    order: 2; /* Ensure text appears below the image */
     flex: 1;
     padding: 20px;
     display: flex;
     justify-content: center;
-}
-
-.motto-box:nth-child(even) .motto-content {
-    border-right: none;
-    border-left: 1px solid rgba(0, 255, 255, 0.1);
+    flex-direction: column; /* Ensure text is in a column layout */
 }
 
 .motto-image {
+    order: 1; /* Ensure image appears at the top */
     flex: 1.2; /* Reduced from 1.5 */
     padding: 15px;
-    height: 250px; /* Fixed height */
+    height: auto; /* Adjust height to auto */
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.3);  /* Slightly darker background */
     border-radius: 8px;
-    margin: 10px;  /* Add some margin */
+    margin: 10px;
     max-height: 500px; /* Added max-height */
-    overflow: hidden; /* Added overflow control */
+    overflow: hidden;
+}
+
+.motto-image img {
+    width: 100%;
+    height: auto; /* Adjust height to auto */
+    object-fit: contain; /* Changed from cover */
+    border-radius: 8px;
+    max-height: 400px;  /* Set maximum height for images */
+}
+.motto-box:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-left: 20%;
+}
+
+.motto-box:nth-child(odd) {
+    margin-right: 20%;
+    flex-direction: row;
+}
+
+.motto-box:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-left: 20%;
+}
+
+.motto-box:nth-child(odd) {
+    margin-right: 20%;
+    flex-direction: row;
+}
+
+.motto-box:nth-child(even) .motto-content {
+    border-right: none;
+    border-left: 1px solid rgba(0, 255, 255, 0.1);
 }
 
 .motto-image img {
@@ -805,31 +808,6 @@ img {
     object-fit: contain; /* Changed from cover */
     border-radius: 8px;
     max-height: 400px;  /* Set maximum height for images */
-}
-
-.motto-content h2 {
-    margin-bottom: 25px;
-    color: #00ffff;
-    font-size: 24px; /* Reduced from 32px */
-}
-
-.motto-content h2 {
-    color: #00ffff;
-    margin-bottom: 15px;
-    font-size: 24px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease;
-}
-
-.motto-content p {
-    color: #ffffff;
-    line-height: 1.6;
-    font-size: 18px;
-    margin-bottom: 12px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.6s ease;
 }
 
 .motto-box.in-view .motto-content h2 {
