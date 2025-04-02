@@ -631,21 +631,22 @@ img {
         border-radius: 4px;
     }
 
-    .timing-box {
-        min-width: 250px;
-        flex: 0 0 48%; /* Make each box take nearly half of the container width */
-        height: auto;
-        background: rgba(17, 17, 17, 0.8);
-        backdrop-filter: blur(8px);
-        border-radius: 15px;
-        padding: 30px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        opacity: 0;
-        transform: translateY(30px); /* Reverted to original state */
-        transition: all 0.8s ease;   /* Reverted to original state */
-        scroll-snap-align: start;
-        margin-bottom: 20px; /* Add space between rows */
-    }
+.timing-box {
+    min-width: 250px;
+    flex: 0 0 48%; /* Make each box take nearly half of the container width */
+    height: auto;
+    background: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(30px); /* Reverted to original state */
+    transition: all 0.8s ease;   /* Reverted to original state */
+    scroll-snap-align: start;
+    margin-bottom: 20px; /* Add space between rows */
+    margin-right: 20px; /* Add space between columns */
+}
 
     .timing-box:hover {
         transform: scale(1.1);
@@ -665,12 +666,12 @@ img {
                 text-align: center;
     }
 
-    .timing-box p {
-        color: #ffffff;
-        line-height: 1.6;
-        font-size: 35px;
-                text-align: center;
-    }
+.timing-box p {
+    color: #777; 
+    line-height: 1.6;
+    font-size: 35px;
+    text-align: center;
+}
 
     .coming-soon-box {
         min-width: 250px;
@@ -964,20 +965,22 @@ img {
             -webkit-overflow-scrolling: touch;
         }
 
-    .timing-box {
-        min-width: 250px;
-        flex: 0 0 auto;
-        height: auto;
-        background: rgba(17, 17, 17, 0.8);
-        backdrop-filter: blur(8px);
-        border-radius: 15px;
-        padding: 30px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        opacity: 0;
-        transform: translateY(30px); /* Reverted to original state */
-        transition: all 0.8s ease;   /* Reverted to original state */
-        scroll-snap-align: start;
-    }
+.timing-box {
+    min-width: 250px;
+    flex: 0 0 48%; /* Make each box take nearly half of the container width */
+    height: auto;
+    background: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(30px); /* Reverted to original state */
+    transition: all 0.8s ease;   /* Reverted to original state */
+    scroll-snap-align: start;
+    margin-bottom: 20px; /* Add space between rows */
+    margin-right: 20px; /* Add space between columns */
+}
 
     .timing-box:hover {
         transform: scale(1.1);
@@ -997,7 +1000,7 @@ img {
     }
 
     .timing-box p {
-        color: #ffffff;
+        color: #777;
         line-height: 1.6;
         text-align: center;
         font-size: 35px;
@@ -1355,20 +1358,22 @@ img {
     .gam:hover{
         cursor: pointer;
     } 
-    .timing-box {
-        min-width: 250px;
-        flex: 0 0 auto;
-        height: auto;
-        background: rgba(17, 17, 17, 0.8);
-        backdrop-filter: blur(8px);
-        border-radius: 15px;
-        padding: 30px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        opacity: 0;
-        transform: translateY(30px); /* Reverted to original state */
-        transition: all 0.8s ease;   /* Reverted to original state */
-        scroll-snap-align: start;
-    }
+.timing-box {
+    min-width: 250px;
+    flex: 0 0 48%; /* Make each box take nearly half of the container width */
+    height: auto;
+    background: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(30px); /* Reverted to original state */
+    transition: all 0.8s ease;   /* Reverted to original state */
+    scroll-snap-align: start;
+    margin-bottom: 20px; /* Add space between rows */
+    margin-right: 20px; /* Add space between columns */
+}
 
     .timing-box:hover {
         transform: scale(1.1);
@@ -1388,7 +1393,7 @@ img {
     }
 
     .timing-box p {
-        color: #ffffff;
+        color: #777;
         line-height: 1.6;
         text-align: center;
         font-size: 35px;
@@ -1538,20 +1543,22 @@ img {
                     line-height: 1.5;
                     margin-bottom: calc(8px + 0.2vw);
                 }
-            .timing-box {
-        min-width: 250px;
-        flex: 0 0 auto;
-        height: auto;
-        background: rgba(17, 17, 17, 0.8);
-        backdrop-filter: blur(8px);
-        border-radius: 15px;
-        padding: 30px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        opacity: 0;
-        transform: translateY(30px); /* Reverted to original state */
-        transition: all 0.8s ease;   /* Reverted to original state */
-        scroll-snap-align: start;
-    }
+.timing-box {
+    min-width: 250px;
+    flex: 0 0 48%; /* Make each box take nearly half of the container width */
+    height: auto;
+    background: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(30px); /* Reverted to original state */
+    transition: all 0.8s ease;   /* Reverted to original state */
+    scroll-snap-align: start;
+    margin-bottom: 20px; /* Add space between rows */
+    margin-right: 20px; /* Add space between columns */
+}
 
     .timing-box:hover {
         transform: scale(1.1);
@@ -1572,7 +1579,7 @@ img {
     }
 
     .timing-box p {
-        color: #ffffff;
+        color: #777;
         line-height: 1.6;
         text-align: center;
     }
@@ -1618,20 +1625,22 @@ img {
         .dropdown-menu a {
             font-size: 18px;  /* Slightly smaller for very small screens */
     }
-            .timing-box {
-        min-width: 250px;
-        flex: 0 0 auto;
-        height: auto;
-        background: rgba(17, 17, 17, 0.8);
-        backdrop-filter: blur(8px);
-        border-radius: 15px;
-        padding: 30px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        opacity: 0;
-        transform: translateY(30px); /* Reverted to original state */
-        transition: all 0.8s ease;   /* Reverted to original state */
-        scroll-snap-align: start;
-    }
+ .timing-box {
+    min-width: 250px;
+    flex: 0 0 48%; /* Make each box take nearly half of the container width */
+    height: auto;
+    background: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(30px); /* Reverted to original state */
+    transition: all 0.8s ease;   /* Reverted to original state */
+    scroll-snap-align: start;
+    margin-bottom: 20px; /* Add space between rows */
+    margin-right: 20px; /* Add space between columns */
+}
 
     .timing-box:hover {
         transform: scale(1.1);
@@ -1651,7 +1660,7 @@ img {
     }
 
     .timing-box p {
-        color: #ffffff;
+        color: #777;
         line-height: 1.6;
         text-align: center;
     }
