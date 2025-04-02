@@ -977,6 +977,7 @@ img {
         transform: translateY(30px); /* Reverted to original state */
         transition: all 0.8s ease;   /* Reverted to original state */
         scroll-snap-align: start;
+        margin-bottom: 20px;
     }
 
     .timing-box:hover {
@@ -995,7 +996,9 @@ img {
         margin-bottom: 20px;
         font-size: 35px;
     }
-
+    .coming-soon-box p {
+        color: grey; /* Change text color to grey for mobile view */
+    }
     .timing-box p {
         color: #ffffff;
         line-height: 1.6;
@@ -1368,6 +1371,8 @@ img {
         transform: translateY(30px); /* Reverted to original state */
         transition: all 0.8s ease;   /* Reverted to original state */
         scroll-snap-align: start;
+        margin-bottom: 20px; /* Existing space between rows */
+
     }
 
     .timing-box:hover {
@@ -1386,7 +1391,9 @@ img {
         margin-bottom: 20px;
         font-size: 35px;
     }
-
+    .coming-soon-box p {
+        color: grey; /* Change text color to grey for mobile view */
+    }
     .timing-box p {
         color: #ffffff;
         line-height: 1.6;
@@ -1551,6 +1558,8 @@ img {
         transform: translateY(30px); /* Reverted to original state */
         transition: all 0.8s ease;   /* Reverted to original state */
         scroll-snap-align: start;
+        margin-bottom: 20px; /* Existing space between rows */
+
     }
 
     .timing-box:hover {
@@ -1570,7 +1579,9 @@ img {
         font-size: 35px;
         text-align: center;
     }
-
+    .coming-soon-box p {
+        color: grey; /* Change text color to grey for mobile view */
+    }
     .timing-box p {
         color: #ffffff;
         line-height: 1.6;
