@@ -203,7 +203,7 @@ img {
     font-size: 18px; /* Increase heading and paragraph size in motto content */
 }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         .dropdown-menu {
             width: 85%;
             max-width: 300px;
@@ -216,7 +216,7 @@ img {
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         .dropdown-menu {
             position: absolute;
             top: 100%;
@@ -867,7 +867,7 @@ img {
         color: #00ffff;
     }
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     body {
         font-size: 24px;  /* Increase base font size */
     }
@@ -906,7 +906,7 @@ img {
         font-size: 28px;  /* Increase contact item icon size */
     }
 }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         .navbar {
             padding: 15px 0;
         }
@@ -1967,7 +1967,7 @@ img {
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         .dropdown-menu {
             position: absolute;
             display: none; /* Hide by default */
