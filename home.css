@@ -1748,22 +1748,27 @@ img {
         }
 
         /* Restore timing section to horizontal scroll */
-        .timing-container {
-            padding: 40px;
-            overflow-x: visible;
-        }
+    .timing-container {
+        padding: 20px;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        overflow-y: hidden; /* Prevent vertical scrolling */
+        width: 100%;
+        display: flex; /* Ensure horizontal layout */
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
 
-        .sports-wrapper {
-    display: flex;
-    gap: 30px;
-    padding: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 15px;
-    width: 100%;
-    min-width: min-content;
-        }
+    .sports-wrapper {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        overflow-y: hidden; /* Prevent vertical scrolling */
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 15px; /* Space for scrollbar */
+        width: 100%;
+        min-width: min-content;
+    }
 
         .sports-wrapper::-webkit-scrollbar {
             height: 10px;
@@ -1783,13 +1788,21 @@ img {
             background: #00e5ff;
         }
 
-        .timing-box {
-            min-width: 300px;
-            max-width: 300px;
-            height: 200px;
-            margin: 0;
-            scroll-snap-align: start;
-        }
+    .timing-box {
+        min-width: 250px;
+        flex: 0 0 auto;
+        height: auto;
+        background: rgba(17, 17, 17, 0.8);
+        backdrop-filter: blur(8px);
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        opacity: 0;
+        transform: translateY(30px); /* Reverted to original state */
+        transition: all 0.8s ease;   /* Reverted to original state */
+        scroll-snap-align: start;
+        margin-bottom: 20px; /* Add space between rows */
+    }
 
         .motto-container {
         padding: 40px;
