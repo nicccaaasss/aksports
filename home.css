@@ -596,11 +596,11 @@ img {
 
     .timing-container {
         padding: 20px;
-        overflow-x: auto; /* Allow horizontal scrolling */
-        overflow-y: hidden; /* Prevent vertical scrolling */
+        overflow-y: auto; /* Allow vertical scrolling */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
         width: 100%;
-        display: flex; /* Ensure horizontal layout */
-        flex-wrap: wrap; /* Allow wrapping for boxes */
+        display: flex; /* Ensure vertical layout */
+        flex-direction: column; /* Stack boxes vertically */
     }
 
     .sports-wrapper {
@@ -625,8 +625,7 @@ img {
     }
 
     .timing-box {
-        min-width: 250px;
-        flex: 0 0 48%; /* Make each box take nearly half of the container width */
+        min-width: 100%; /* Take full width */
         height: auto;
         background: rgba(17, 17, 17, 0.8);
         backdrop-filter: blur(8px);
@@ -634,10 +633,9 @@ img {
         padding: 30px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         opacity: 0;
-        transform: translateY(30px); /* Reverted to original state */
-        transition: all 0.8s ease;   /* Reverted to original state */
-        scroll-snap-align: start;
-        margin-bottom: 20px; /* Add space between rows */
+        transform: translateY(30px);
+        transition: all 0.8s ease;
+        margin-bottom: 20px; /* Add space between boxes */
     }
 
     .timing-box:hover {
@@ -647,7 +645,7 @@ img {
 
     .timing-box.in-view {
         opacity: 1;
-        transform: translateY(0); /* Reverted to original state */
+        transform: translateY(0);
         transition-delay: calc(var(--delay) * 0.2s);
     }
 
@@ -658,44 +656,6 @@ img {
     }
 
     .timing-box p {
-        color: #ffffff;
-        line-height: 1.6;
-    }
-
-    .coming-soon-box {
-        min-width: 250px;
-        flex: 0 0 30%; /* Make each coming soon box take nearly a third of the container width */
-        height: auto;
-        background: rgba(17, 17, 17, 0.8);
-        backdrop-filter: blur(8px);
-        border-radius: 15px;
-        padding: 30px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        opacity: 0;
-        transform: translateY(30px); /* Reverted to original state */
-        transition: all 0.8s ease;   /* Reverted to original state */
-        scroll-snap-align: start;
-        margin-bottom: 20px; /* Add space between rows */
-    }
-
-    .coming-soon-box:hover {
-        transform: scale(1.1);
-        z-index: 10;
-    }
-
-    .coming-soon-box.in-view {
-        opacity: 1;
-        transform: translateY(0); /* Reverted to original state */
-        transition-delay: calc(var(--delay) * 0.2s);
-    }
-
-    .coming-soon-box h2 {
-        color: #00ffff;
-        margin-bottom: 20px;
-        font-size: 24px;
-    }
-
-    .coming-soon-box p {
         color: #ffffff;
         line-height: 1.6;
     }
