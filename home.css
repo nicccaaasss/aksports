@@ -995,7 +995,7 @@ img {
 
         .content-box h2,
         .motto-content h2 {
-            font-size: 18px;
+            font-size: 35px;
             margin-bottom: 10px;
         }
 
@@ -1063,7 +1063,7 @@ img {
 
         .content-box h2,
         .motto-content h2 {
-                    font-size: 24px;
+                    font-size: 35px;
                     margin-bottom: 15px;
         }
 
@@ -1487,7 +1487,7 @@ img {
             font-size: 1.5rem;
         }
 
-        .location-text p {
+        .location-text p, .content-box p {
             font-size: 32px;
             line-height: 1.6;
             margin-bottom: 6px;
@@ -1888,7 +1888,7 @@ img {
 
     @media screen and (max-width: 480px) {
 
-        .location-text p {
+        .location-text p, .content-box p {
             font-size: 32px;
             line-height: 1.6;
             margin-bottom: 6px;
