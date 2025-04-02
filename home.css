@@ -751,7 +751,10 @@ img {
     justify-content: center;
     flex-direction: column; /* Ensure text is in a column layout */
 }
-
+.motto-content h2 {
+    font-size: 20px; /* Increase heading and paragraph size in motto content */
+    color: #00ffff; /* Set color to cyan */
+}
 .motto-image {
     order: 1; /* Ensure image appears at the top */
     flex: 1.2; /* Reduced from 1.5 */
