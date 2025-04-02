@@ -920,7 +920,8 @@ img {
     }
 
     .timing-box h2, .timing-box p {
-        font-size: 22px;  /* Increase timing box font size */
+        font-size: 35px;  /* Increase font size */
+        text-align: center;
     }
 
     .motto-content h2, .motto-content p {
