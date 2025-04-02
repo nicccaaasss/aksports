@@ -1747,84 +1747,71 @@ img {
             order: 2; /* Places text on right */
         }
 
-        /* Restore timing section to horizontal scroll */
-    .timing-container {
-        padding: 20px;
-        overflow-x: auto; /* Allow horizontal scrolling */
-        overflow-y: hidden; /* Prevent vertical scrolling */
-        width: 100%;
-        display: flex; /* Ensure horizontal layout */
-        flex-wrap: nowrap; /* Prevent wrapping */
-    }
+            .timing-container {
+                padding: 40px;
+                position: relative;
+                background-color: black;
+                overflow: hidden;
+                overflow-x: visible; /* Allow horizontal scroll only in timing section */
+                margin: 0;
+                width: 100%;
+            }
 
-    .sports-wrapper {
-        display: flex;
-        gap: 20px;
-        padding: 20px;
-        overflow-x: auto; /* Allow horizontal scrolling */
-        overflow-y: hidden; /* Prevent vertical scrolling */
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 15px; /* Space for scrollbar */
-        width: 100%;
-        min-width: min-content;
-    }
+            .sports-wrapper {
+                display: flex;
+                gap: 30px;
+                padding: 20px;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+                padding-bottom: 15px; /* Space for scrollbar */
+                width: 100%;
+                min-width: min-content;
+            }
 
-        .sports-wrapper::-webkit-scrollbar {
-            height: 10px;
-        }
+            .sports-wrapper::-webkit-scrollbar {
+                width: 8px;
+            }
 
-        .sports-wrapper::-webkit-scrollbar-track {
-            background: black;
-            border-radius: 5px;
-        }
+            .sports-wrapper::-webkit-scrollbar-thumb {
+                background: rgba(0, 255, 255, 0.3);
+                border-radius: 4px;
+            }
 
-        .sports-wrapper::-webkit-scrollbar-thumb {
-            background: #00bcd4;
-            border-radius: 5px;
-        }
+            .timing-box {
+                min-width: 300px;
+                background: rgba(17, 17, 17, 0.8);
+                backdrop-filter: blur(8px);
+                border-radius: 15px;
+                padding: 30px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+                opacity: 0;
+                transform: scale(0.8); /* Removed translateY */
+                transition: all 0.3s ease;
+                scroll-snap-align: start;
+            }
 
-        .sports-wrapper::-webkit-scrollbar-thumb:hover {
-            background: #00e5ff;
-        }
+            .timing-box:hover {
+                transform: scale(1.1);
+                z-index: 10;
+            }
 
-    .timing-box {
-        min-width: 250px;
-        flex: 0 0 auto;
-        height: auto;
-        background: rgba(17, 17, 17, 0.8);
-        backdrop-filter: blur(8px);
-        border-radius: 15px;
-        padding: 30px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        opacity: 0;
-        transform: translateY(30px); /* Reverted to original state */
-        transition: all 0.8s ease;   /* Reverted to original state */
-        scroll-snap-align: start;
-        margin-bottom: 20px; /* Add space between rows */
-    }
+            .timing-box.in-view {
+                opacity: 1;
+                transform: scale(1); /* Removed translateY */
+                transition-delay: calc(var(--delay) * 0.2s);
+            }
 
-    .timing-box:hover {
-        transform: scale(1.1);
-        z-index: 10;
-    }
+            .timing-box h2 {
+                color: #00ffff;
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
 
-    .timing-box.in-view {
-        opacity: 1;
-        transform: translateY(0);
-        transition-delay: calc(var(--delay) * 0.2s);
-    }
-
-    .timing-box h2 {
-        color: #00ffff;
-        margin-bottom: 20px;
-        font-size: 24px;
-    }
-
-    .timing-box p {
-        color: #ffffff;
-        line-height: 1.6;
-    }
+            .timing-box p {
+                color: #ffffff;
+                line-height: 1.6;
+            }
 
         .motto-container {
         padding: 40px;
