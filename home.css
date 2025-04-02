@@ -950,8 +950,10 @@ img {
     }
 
         .timing-container {
-            padding: 20px;
-            overflow-x: visible;
+        padding: 20px;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        overflow-y: hidden; /* Prevent vertical scrolling */
+        width: 100%;
         }
 
         .sports-wrapper {
