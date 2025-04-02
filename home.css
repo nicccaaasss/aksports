@@ -217,6 +217,7 @@ img {
 
     .motto-content {
         order: 2; /* Ensure text appears below the image */
+        margin: 20px;
     }
 
     .motto-image {
