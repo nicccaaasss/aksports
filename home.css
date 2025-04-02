@@ -750,6 +750,7 @@ img {
     display: flex;
     justify-content: center;
     flex-direction: column; /* Ensure text is in a column layout */
+    margin: 20px; /* Add margin for better spacing */
 }
 .motto-content h2 {
     font-size: 20px; /* Increase heading and paragraph size in motto content */
