@@ -940,12 +940,14 @@ img {
         width: 100%;
     }
 
-        .timing-container {
+    .timing-container {
         padding: 20px;
-        overflow-x: auto; /* Allow horizontal scrolling */
-        overflow-y: hidden; /* Prevent vertical scrolling */
+        overflow-y: auto; /* Allow vertical scrolling */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
         width: 100%;
-        }
+        display: flex; /* Ensure vertical layout */
+        flex-direction: column; /* Stack boxes vertically */
+    }
 
         .sports-wrapper {
             display: flex;
@@ -1340,6 +1342,14 @@ img {
     .gam:hover{
         cursor: pointer;
     } 
+    .timing-container {
+        padding: 20px;
+        overflow-y: auto; /* Allow vertical scrolling */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        width: 100%;
+        display: flex; /* Ensure vertical layout */
+        flex-direction: column; /* Stack boxes vertically */
+    }
     .timing-box {
         min-width: 250px;
         flex: 0 0 auto;
@@ -1521,6 +1531,14 @@ img {
                     line-height: 1.5;
                     margin-bottom: calc(8px + 0.2vw);
                 }
+            .timing-container {
+        padding: 20px;
+        overflow-y: auto; /* Allow vertical scrolling */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        width: 100%;
+        display: flex; /* Ensure vertical layout */
+        flex-direction: column; /* Stack boxes vertically */
+    }
             .timing-box {
         min-width: 250px;
         flex: 0 0 auto;
@@ -1598,6 +1616,14 @@ img {
 
         .dropdown-menu a {
             font-size: 18px;  /* Slightly smaller for very small screens */
+    }
+            .timing-container {
+        padding: 20px;
+        overflow-y: auto; /* Allow vertical scrolling */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+        width: 100%;
+        display: flex; /* Ensure vertical layout */
+        flex-direction: column; /* Stack boxes vertically */
     }
             .timing-box {
         min-width: 250px;
