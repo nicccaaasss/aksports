@@ -405,13 +405,12 @@ opacity: 0.8;
     .status-box h2, .timing-box h2 {
         font-size: 2em; /* Increase font size for headers */
     }
-        .info-boxes {
+.info-boxes {
     display: flex;
     gap: 30px;
     max-width: 1400px;
     margin: 40px auto;
     padding: 0 40px;
-    flex-direction: column; /* Change layout to vertical */
 }
 
 .status-box, .timing-box {
@@ -423,7 +422,6 @@ opacity: 0.8;
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s ease;
-    font-size: 2em;
 }
 
 .status-box {
@@ -444,7 +442,7 @@ opacity: 0.8;
 }
 
 .status-label {
-    font-size: 1.75em
+    font-size: 20px;
     color: #00ffff;
     margin-top: 15px;
 }
@@ -452,7 +450,6 @@ opacity: 0.8;
 .timing-box p {
     color: #ffffff;
     line-height: 1.8;
-    font-size: 1.5em;
 }
 
 .status-box.in-view, .timing-box.in-view {
