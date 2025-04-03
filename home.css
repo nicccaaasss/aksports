@@ -548,7 +548,15 @@ img {
         opacity: 1;
         transform: translateX(0);
     }
-
+    .location-box {
+        width: 80%; /* Adjusted to match content and logo box width */
+        padding: 20px;
+        background: rgba(17, 17, 17, 0.8);
+        backdrop-filter: blur(8px);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        margin-bottom: 20px; /* Add some spacing between the boxes */
+    }
     .location-text {
         flex: 1;
         background: rgba(17, 17, 17, 0.8);
@@ -2050,6 +2058,15 @@ img {
             line-height: 1.6;
             margin-bottom: 8px;
         }
+            .location-box {
+        width: 80%; /* Adjusted to match content and logo box width */
+        padding: 20px;
+        background: rgba(17, 17, 17, 0.8);
+        backdrop-filter: blur(8px);
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        margin-bottom: 20px; /* Add some spacing between the boxes */
+    }
     }
 
     @media screen and (max-width: 480px) {
