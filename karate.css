@@ -406,11 +406,11 @@ opacity: 0.8;
     }
 
         .slideshow-container {
-            height: 30%; /* Adjusted for mobile */
+            height: 50vh; /* Adjusted for mobile */
         }
 
         .slide {
-            height: 20vh;
+            height: 50vh;
         }
 
         .nav-button {
@@ -422,11 +422,11 @@ opacity: 0.8;
     /* Small phones */
     @media screen and (max-width: 480px) {
         .slideshow-container {
-            height: 50%;
+            height: 40vh;
         }
 
         .slide {
-            height: 50%;
+            height: 40vh;
         }
 
         .slide img {
