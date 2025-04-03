@@ -625,6 +625,19 @@ opacity: 0.8;
 .timing-box.in-view {
     transition-delay: 0.4s;
 }
+    .regbtn {
+    background-color: transparent;
+    padding: 25px 50px;
+    margin-top: 8%;
+    color: #00ffff;
+    border: solid 3px cyan;
+    border-radius: 30px;
+    font-size: 25px;
+}
+    .regbtn:hover{
+cursor: pointer;
+opacity: 0.8;
+}
     }
 @media screen and (min-width: 1024px) {
     .slideshow-container {
@@ -772,5 +785,17 @@ opacity: 0.8;
 
 .timing-box.in-view {
     transition-delay: 0.4s;
+}
+        .regbtn{
+background-color: transparent;
+padding: 10px 20px;
+margin-top: 8%;
+color: #00ffff;
+border: solid 3px cyan ;
+border-radius: 30px;
+}
+.regbtn:hover{
+cursor: pointer;
+opacity: 0.8;
 }
 }
