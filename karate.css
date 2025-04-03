@@ -758,6 +758,7 @@ opacity: 0.8;
 .timing-box p {
     color: #ffffff;
     line-height: 1.8;
+    font-size: 22.5px;
 }
 
 .status-box.in-view, .timing-box.in-view {
