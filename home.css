@@ -4,24 +4,6 @@
     object-fit: cover; /* Ensure good fit without excessive compression */
 }
 
-/* For WebKit browsers (Chrome, Safari) */
-::-webkit-scrollbar {
-    height: 10px; /* Height of the scrollbar */
-}
-
-::-webkit-scrollbar-track {
-    background: black; /* Background of the scrollbar track */
-}
-
-::-webkit-scrollbar-thumb {
-    background: #00bcd4; /* Tinted cyan color */
-    border-radius: 5px; /* Rounded edges */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #00e5ff; /* Lighter cyan on hover */
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -1671,6 +1653,22 @@ img {
 
     /* Base styles for laptop/desktop view */
     @media screen and (min-width: 1024px) {
+        ::-webkit-scrollbar {
+    height: 10px; /* Height of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: black; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00bcd4; /* Tinted cyan color */
+    border-radius: 5px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00e5ff; /* Lighter cyan on hover */
+}
         .navbar {
             height: 60px;
             padding: 0 40px;
