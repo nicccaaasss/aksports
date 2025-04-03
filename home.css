@@ -574,11 +574,11 @@ img {
         transition: all 0.8s ease;
     }
 
-    .header-section h1 {
-        color: #00ffff;
-        font-size: 48px;
-        margin: 0;
-    }
+.header-section h1 {
+    font-size: 60px; /* Increase font size greater than content box */
+    color: #00ffff;
+    margin: 0;
+}
 
     .header-section.in-view {
         opacity: 1;
@@ -1584,7 +1584,7 @@ img {
         }
 
         .header-section h1 {
-            font-size: 28px;
+            font-size: 60px;
         }
 
         .motto-box {
