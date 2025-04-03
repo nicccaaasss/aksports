@@ -230,7 +230,8 @@ img {
     }
 
     .menu a {
-        font-size: 22px;
+        font-size: 30px;
+        text-align: center;
     }
     }
 
@@ -824,9 +825,10 @@ img {
     .intro-text {
         font-size: 3rem;  /* Increase intro text size */
     }
-
-    .menu a {
-        font-size: 22px;  /* Increase menu font size */
+    
+           .menu a {
+        font-size: 30px;
+        text-align: center;
     }
 
     .timing-box h2, .timing-box p {
@@ -1570,9 +1572,9 @@ img {
             line-height: 1.6;
             margin-bottom: 6px;
         }
-        .menu a {
-            font-size: 24px;  /* Slightly smaller for very small screens */
-            justify-content: center;
+    .menu a {
+        font-size: 30px;
+        text-align: center;
     }
 
         .dropdown-menu a {
@@ -1644,6 +1646,10 @@ img {
             flex-direction: row;
             gap: 40px;
         }
+            .menu a {
+        font-size: 24px;
+        text-align: center;
+    }
 
         /* Restore original slideshow height */
         .slideshow-container,
