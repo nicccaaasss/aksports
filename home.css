@@ -1864,7 +1864,7 @@ img {
 
         .menu {
             flex-direction: row;
-            gap: 40px;
+            gap: 2px;
         }
 
         .slideshow-container,
