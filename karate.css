@@ -103,8 +103,13 @@ img {
 }
 
 .menu li {
-    margin: 0 25px;
+    margin: 0 25px; /* Existing margin */
     position: relative;
+}
+
+/* Add specific margin between Home and Games */
+.menu li:first-child {
+    margin-right: 50px; /* Increase this value to add more gap */
 }
 
 .menu a {
