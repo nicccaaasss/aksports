@@ -1836,6 +1836,35 @@ img {
         transform: translateY(0);
         transition-delay: 0.6s;
     }
+            .footer-box {
+        padding: 80px 0; /* Restore the padding to its original value */
+    }
+
+    .footer-content {
+        max-width: 1400px; /* Adjust max-width to original size */
+        flex-direction: row; /* Arrange content in a row */
+        justify-content: space-between; /* Distribute space evenly */
+    }
+
+    .footer-heading {
+        font-size: 28px; /* Adjust font size if needed */
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr); /* Adjust columns if needed */
+    }
+
+    .contact-item {
+        padding: 50px 30px;
+    }
+
+    .contact-item a {
+        font-size: 24px;
+    }
+
+    .contact-item i {
+        font-size: 30px;
+    }
     }
 
     /* For larger screens */
