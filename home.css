@@ -290,6 +290,7 @@ img {
     }
     .navbar {
         padding: 15px 0;
+        height: 75px;
     }
 
     .nav-button {
