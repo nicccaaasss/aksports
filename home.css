@@ -752,6 +752,7 @@ img {
         padding: 60px 0;
         margin-top: 60px;
         box-shadow: 0 -4px 15px rgba(0,0,0,0.2);
+        padding: 80px 0;
     }
 
     .footer-content {
@@ -1223,17 +1224,21 @@ img {
                     line-height: 1.5;
         }
 
-        .footer-heading {
-            font-size: 18px;
-        }
+    .footer-box {
+        padding: 80px 0; /* Increase footer height */
+    }
+    
+    .footer-heading {
+        font-size: 36px;  /* Increase footer heading font size */
+    }
 
-        .contact-item a {
-            font-size: 24px;
-        }
-
-        .contact-item i {
-            font-size: 24px;
-        }
+    .contact-item a {
+        font-size: 28px;  /* Increase contact item font size */
+    }
+    
+    .contact-item i {
+        font-size: 32px;  /* Increase contact item icon size */
+    }
 
         /* Even smaller text for small screens */
         .header-section h1 {
@@ -1246,7 +1251,7 @@ img {
         }
 
         .contact-item a {
-            font-size: 10px;
+            font-size: 28px;
         }
 
         /* More aggressive dynamic text sizing for small screens */
