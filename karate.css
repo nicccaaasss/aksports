@@ -564,7 +564,8 @@ opacity: 0.8;
     }
     .info-boxes {
     display: flex;
-    gap: 30px;
+    flex-direction: column; /* Change layout to vertical */
+    gap: 20px;
     max-width: 1400px;
     margin: 40px auto;
     padding: 0 40px;
@@ -579,6 +580,8 @@ opacity: 0.8;
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s ease;
+    font-size: 1.5em; /* Increase font size for text */
+    text-align: center;
 }
 
 .status-box {
@@ -595,11 +598,11 @@ opacity: 0.8;
 .status-box h2, .timing-box h2 {
     color: #00ffff;
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 2em;
 }
 
 .status-label {
-    font-size: 20px;
+    font-size: 1.75em;
     color: #00ffff;
     margin-top: 15px;
 }
@@ -607,6 +610,7 @@ opacity: 0.8;
 .timing-box p {
     color: #ffffff;
     line-height: 1.8;
+    font-size: 1.5em;
 }
 
 .status-box.in-view, .timing-box.in-view {
