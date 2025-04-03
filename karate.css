@@ -753,7 +753,9 @@ opacity: 0.8;
 }
 
 .timing-box {
-    flex: 2;
+    position: relative;
+    top: 0;
+    order: -1;
 }
 
 .status-box h2, .timing-box h2 {
