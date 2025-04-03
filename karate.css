@@ -467,7 +467,7 @@ opacity: 0.8;
     }
 
     /* Small phones */
-@media screen and (min-width: 200px) {
+@media screen and (min-width: 200px) and (max-width: 1023px) {
     .slideshow-container {
         position: relative;
         width: 100%;
