@@ -518,25 +518,7 @@ opacity: 0.8;
         width: 100%;
         margin-top: 10px;
     }
-        .info-boxes {
-        flex-direction: column; /* Change layout to vertical */
-    }
-
-    .status-box, .timing-box {
-        font-size: 1.5em; /* Increase font size for text */
-    }
-
-    .status-box h2, .timing-box h2 {
-        font-size: 2em; /* Increase font size for headers */
-    }
-
-    .status-label {
-        font-size: 1.75em; /* Increase font size for labels */
-    }
-
-    .timing-box p {
-        font-size: 1.5em; /* Increase font size for paragraphs */
-    }
+    
     }
 @media screen and (min-width: 1024px) {
     .slideshow-container {
