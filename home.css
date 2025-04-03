@@ -885,11 +885,11 @@ img {
         font-size: 32px; /* Slightly reduced font size for content text */
     }
     .footer-heading {
-        font-size: 26px;  /* Increase footer heading size */
+        font-size: 30px;  /* Increase footer heading size */
     }
 
     .contact-item a {
-        font-size: 20px;  /* Increase contact item font size */
+        font-size: 28px;  /* Increase contact item font size */
     }
 
     .contact-item i {
@@ -1008,7 +1008,7 @@ img {
 
         /* Adjust text sizes for mobile */
         .header-section h1 {
-            font-size: 24px;
+            font-size: 40px;
         }
 
         .content-box h2,
@@ -1043,16 +1043,16 @@ img {
         }
 
         .contact-item a {
-            font-size: 12px;
+            font-size: 26px;
         }
 
         .contact-item i {
-            font-size: 16px;
+            font-size: 26px;
         }
 
         /* Further reduce text sizes for mobile */
         .header-section h1 {
-            font-size: 24px;
+            font-size: 40px;
         }
 
         .timing-box h2 {
@@ -1081,7 +1081,7 @@ img {
 
         /* Dynamic text sizing for medium screens */
         .header-section h1 {
-                    font-size: 30px;
+                    font-size: 40px;
         }
 
         .content-box h2,
@@ -1242,7 +1242,7 @@ img {
 
         /* Further reduce text sizes for mobile */
         .header-section h1 {
-                    font-size: 26px;
+                    font-size: 240px;
         }
 
         .content-box h2,
@@ -1270,16 +1270,16 @@ img {
         }
 
         .contact-item a {
-            font-size: 11px;
+            font-size: 24px;
         }
 
         .contact-item i {
-            font-size: 14px;
+            font-size: 24px;
         }
 
         /* Even smaller text for small screens */
         .header-section h1 {
-            font-size: 18px;
+            font-size: 40px;
         }
 
         .content-box h2,
@@ -1293,7 +1293,7 @@ img {
 
         /* More aggressive dynamic text sizing for small screens */
         .header-section h1 {
-            font-size: calc(16px);
+            font-size: calc(32px);
         }
 
         .content-box h2,
@@ -1500,7 +1500,7 @@ img {
         }
 
         .header-section h1 {
-            font-size: 36px;
+            font-size: 40px;
         }
 
         .intro-text {
