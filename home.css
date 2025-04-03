@@ -554,8 +554,8 @@ img {
         background: rgba(17, 17, 17, 0.8);
         backdrop-filter: blur(8px);
         border-radius: 15px;
-        padding: 30px;
-        height: auto;
+        padding: 20px;
+        height: 400px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         opacity: 0;
         transform: translateX(-100px);
@@ -563,6 +563,7 @@ img {
         animation: none;
         display: flex;
         align-items: center;
+        margin: 20px; /* Add gap at all the sides outside the box */
     }
 
     .location-text p {
