@@ -401,25 +401,72 @@ opacity: 0.8;
         border-radius: 2px;
         background: #00ffff;
     }
-            .info-boxes {
-        flex-direction: column; /* Change layout to vertical */
-    }
-
-    .status-box, .timing-box {
-        font-size: 1.5em; /* Increase font size for text */
-    }
 
     .status-box h2, .timing-box h2 {
         font-size: 2em; /* Increase font size for headers */
     }
+        .info-boxes {
+    display: flex;
+    gap: 30px;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 40px;
+    flex-direction: column; /* Change layout to vertical */
+}
 
-    .status-label {
-        font-size: 1.75em; /* Increase font size for labels */
-    }
+.status-box, .timing-box {
+    background: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+    font-size: 2em;
+}
 
-    .timing-box p {
-        font-size: 1.5em; /* Increase font size for paragraphs */
-    }
+.status-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timing-box {
+    flex: 2;
+}
+
+.status-box h2, .timing-box h2 {
+    color: #00ffff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.status-label {
+    font-size: 1.75em
+    color: #00ffff;
+    margin-top: 15px;
+}
+
+.timing-box p {
+    color: #ffffff;
+    line-height: 1.8;
+    font-size: 1.5em;
+}
+
+.status-box.in-view, .timing-box.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.status-box.in-view {
+    transition-delay: 0.2s;
+}
+
+.timing-box.in-view {
+    transition-delay: 0.4s;
+}
     }
 
     /* Small phones */
