@@ -786,7 +786,7 @@ img {
         gap: 15px;
         color: #ffffff;
         transition: all 0.3s ease;
-        padding: 10px;
+        padding: 40px 25px;
         border-radius: 8px;
         background: rgba(255, 255, 255, 0.05);
         cursor: pointer;
@@ -795,7 +795,7 @@ img {
     .contact-item a {
         color: inherit;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 30px;
         display: flex;
         align-items: center;
         gap: 15px;
