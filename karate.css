@@ -717,6 +717,7 @@ opacity: 0.8;
     max-width: 1400px;
     margin: 40px auto;
     padding: 0 40px;
+    flex-direction: row;
 }
 
 .status-box, .timing-box {
@@ -728,6 +729,7 @@ opacity: 0.8;
     opacity: 0;
     transform: translateY(30px);
     transition: all 0.8s ease;
+    text-align: none;
 }
 
 .status-box {
