@@ -539,8 +539,12 @@ opacity: 0.8;
     }
 
     .menu {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        flex-grow: 1;
     }
 
     .menu li {
@@ -628,5 +632,13 @@ opacity: 0.8;
         height: 12px;
         border-radius: 2px;
         background: #00ffff;
+    }
+    .menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        flex-grow: 1;
     }
 }
