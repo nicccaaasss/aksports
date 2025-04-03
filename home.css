@@ -858,6 +858,7 @@ img {
     @media screen and (max-width: 768px) {
         .navbar {
             padding: 15px 0;
+            height: 75px;
         }
 
         .menu {
@@ -1351,7 +1352,8 @@ img {
     /* Mobile Responsive Styles */
     @media screen and (min-width: 300px) {
         .navbar {
-            padding: 10px 0;
+            padding: 15px 0;
+            height: 75px;
         }
 
         .menu {
