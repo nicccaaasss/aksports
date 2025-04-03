@@ -114,7 +114,7 @@ img {
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 30px;
     padding: 8px 0;
     position: relative;
     transition: color 0.3s ease;
@@ -307,6 +307,7 @@ opacity: 0.8;
     @media screen and (max-width: 768px) {
     .navbar {
         padding: 10px 0;
+        font-size: 30px;
     }
 
     .menu {
@@ -468,6 +469,11 @@ opacity: 0.8;
 
     /* Small phones */
 @media screen and (min-width: 200px) and (max-width: 1023px) {
+        .navbar {
+        padding: 10px 0;
+        font-size: 30px;
+    }
+
     .slideshow-container {
         position: relative;
         width: 100%;
@@ -642,6 +648,11 @@ opacity: 0.8;
 }
     }
 @media screen and (min-width: 1024px) {
+        .navbar {
+        padding: 10px 0;
+        font-size: 24px;
+    }
+
     .slideshow-container {
         position: relative;
         width: 100%;
