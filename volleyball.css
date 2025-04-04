@@ -43,7 +43,7 @@ img {
     justify-content: center;
     align-items: center;
     z-index: 999;
-    animation: fadeOut 2s ease-in-out 3s forwards; /* Fades out after 3s */
+    animation: fadeOut 0.75s ease-in-out 0.75s forwards; /* Fades out after 3s */
 }
 
 .intro-text {
@@ -52,7 +52,7 @@ img {
     font-family: Arial, sans-serif;
     font-weight: bold;
     opacity: 0; /* Initially hidden */
-    animation: fadeIn 1.5s ease-in-out forwards; /* Fades in */
+    animation: fadeIn 0.75s ease-in-out forwards; /* Fades in */
 }
 
 @keyframes fadeIn {
