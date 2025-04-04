@@ -306,7 +306,8 @@ opacity: 0.8;
     /* Mobile Responsive Styles */
     @media screen and (max-width: 768px) {
     .navbar {
-        padding: 10px 0;
+        padding: 15px 0;
+        height: 75px;
     }
 
     .menu {
@@ -468,6 +469,10 @@ opacity: 0.8;
 
     /* Small phones */
 @media screen and (min-width: 200px) and (max-width: 1023px) {
+        .navbar {
+        padding: 15px 0;
+        height: 75px;
+    }
     .slideshow-container {
         position: relative;
         width: 100%;
@@ -642,6 +647,10 @@ opacity: 0.8;
 }
     }
 @media screen and (min-width: 1024px) {
+        .navbar {
+        padding: 10px 0;
+        height: 60px;
+    }
     .slideshow-container {
         position: relative;
         width: 100%;
