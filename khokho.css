@@ -475,6 +475,12 @@ opacity: 0.8;
 
     /* Small phones */
 @media screen and (min-width: 200px) and (max-width: 1023px) {
+        .navbar {
+        padding: 15px 0;
+        font-size: 30px;
+        height: 75px;
+    }
+    
     .slideshow-container {
         position: relative;
         width: 100%;
