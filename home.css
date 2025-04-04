@@ -1578,7 +1578,7 @@ img {
     }
 
         .dropdown-menu a {
-            font-size: 18px;  /* Slightly smaller for very small screens */
+            font-size: 35px;  /* Slightly smaller for very small screens */
     }
             .timing-box {
         min-width: 250px;
@@ -1866,6 +1866,9 @@ img {
         align-items: center;
         gap: 15px;
         width: 100%;
+    }
+                .dropdown-menu a {
+            font-size: 24px;  /* Slightly smaller for very small screens */
     }
     }
 
