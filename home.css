@@ -189,10 +189,11 @@ img {
         }
         
         .dropdown-menu a {
-            padding: 12.5px 20px;
+            padding: 15px 75px;
             text-align: left;
             font-size: 20px;
         }
+        
             .motto-box {
         flex-direction: column; /* Ensure flex direction is column for mobile view */
     }
@@ -1394,6 +1395,9 @@ img {
         }
 
         .dropdown-menu a {
+            padding: 15px 75px;
+            text-align: left;
+            font-size: 20px;
             white-space: nowrap;
             text-align: center;
         }
@@ -1579,6 +1583,11 @@ img {
 
         .dropdown-menu a {
             font-size: 35px;  /* Slightly smaller for very small screens */
+            padding: 15px 75px;
+            text-align: left;
+            white-space: nowrap;
+            text-align: center;
+        }
     }
             .timing-box {
         min-width: 250px;
@@ -1869,6 +1878,9 @@ img {
     }
                 .dropdown-menu a {
             font-size: 24px;  /* Slightly smaller for very small screens */
+            padding: 15px 25px;
+            text-align: left;
+            text-align: center;
     }
     }
 
