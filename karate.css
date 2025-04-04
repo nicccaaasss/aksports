@@ -329,6 +329,11 @@ opacity: 0.8;
         width: 100%;
         margin-top: 10px;
     }
+    .dropdown-menu a {
+            padding: 15px 75px;
+            text-align: left;
+            font-size: 35px;
+        }
 
     .slideshow-container {
         position: relative;
@@ -575,6 +580,11 @@ opacity: 0.8;
         width: 100%;
         margin-top: 10px;
     }
+    .dropdown-menu a {
+            padding: 15px 75px;
+            text-align: left;
+            font-size: 35px;
+        }
     .info-boxes {
     display: flex;
     flex-direction: column; /* Change layout to vertical */
@@ -659,6 +669,11 @@ opacity: 0.8;
         padding: 0 40px;
         height: 60px;
     }
+            .dropdown-menu a {
+            padding: 15px 25px;
+            text-align: left;
+            font-size: 24px;
+        }
     .slideshow-container {
         position: relative;
         width: 100%;
