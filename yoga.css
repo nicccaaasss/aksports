@@ -316,6 +316,11 @@ opacity: 0.8;
         padding: 10px 0;
     }
 
+    .menu a {
+        font-size: 30px;
+        text-align: center;
+    }
+
     .menu li {
         margin: 10px 0;
     }
@@ -559,6 +564,10 @@ opacity: 0.8;
         justify-content: center;
         flex-grow: 1;
     }
+        .menu a {
+        font-size: 30px;
+        text-align: center;
+    }
 
     .menu li {
         margin: 5px 0;
@@ -739,6 +748,11 @@ opacity: 0.8;
         justify-content: center;
         flex-grow: 1;
     }
+    .menu a {
+        font-size: 24px;
+        text-align: center;
+    }
+
 .info-boxes {
     display: flex;
     gap: 30px;
