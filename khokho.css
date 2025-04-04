@@ -653,10 +653,10 @@ opacity: 0.8;
 }
     }
 @media screen and (min-width: 1024px) {
-    .navbar {
-        padding: 15px 0;
-        font-size: 30px;
-        height: 75px;
+        .navbar {
+        padding: 0px 40px;
+        font-size: 24x;
+        height: 60px;
     }
     .slideshow-container {
         position: relative;
