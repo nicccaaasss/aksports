@@ -306,8 +306,11 @@ opacity: 0.8;
     /* Mobile Responsive Styles */
     @media screen and (max-width: 768px) {
     .navbar {
-        padding: 10px 0;
+        padding: 15px 0;
+        font-size: 30px;
+        height: 75px;
     }
+
 
     .menu {
         flex-direction: column;
@@ -642,6 +645,12 @@ opacity: 0.8;
 }
     }
 @media screen and (min-width: 1024px) {
+        .navbar {
+        padding: 40px 0;
+        font-size: 24x;
+        height: 60px;
+    }
+
     .slideshow-container {
         position: relative;
         width: 100%;
