@@ -179,12 +179,6 @@ img {
     margin-top: 10px;
 }
 
-.menu li:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
     .dropdown-menu a {
         display: block;
         font-size: 35px;
@@ -198,6 +192,11 @@ img {
     background: rgba(0, 255, 255, 0.1);
 }
 
+.menu li:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
     /* Add some spacing for the body content */
     body {
         margin-top: 0;
