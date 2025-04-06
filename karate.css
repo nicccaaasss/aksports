@@ -197,11 +197,7 @@ img {
         color: #00ffff;
         padding-left: 30px;
     }
-.menu li:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
+
     /* Add some spacing for the body content */
     body {
         margin-top: 0;
