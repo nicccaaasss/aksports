@@ -165,7 +165,7 @@ img {
 .dropdown-menu {
     position: fixed;
     top: 60px;
-    left: 25%;
+    right: 30%;
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.95);
     backdrop-filter: blur(8px);
