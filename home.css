@@ -3,7 +3,32 @@
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure good fit without excessive compression */
 }
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
 
+.nav-button:hover {
+    background: rgba(0, 255, 255, 0.3);
+}
+
+.prev { 
+    left: 20px; 
+}
+
+.next { 
+    right: 20px; 
+}
 img {
   max-width: 100%;
   height: auto;
@@ -313,9 +338,13 @@ img {
         background: rgba(0, 255, 255, 0.3);
     }
 
-    .prev { left: 20px; }
-    .next { right: 20px; }
+    .prev { 
+        left: 20px; 
+    }
 
+    .next { 
+        right: 20px; 
+    }
     .slide-indicators {
         position: absolute;
         bottom: 20px; /* Adjust position relative to slideshow bottom */
@@ -1541,12 +1570,37 @@ img {
     }
 
     /* Small phones */
-    @media screen and (min-width: 200px){
+    @media screen and (min-width: 200px) and (max-width: 1023px){
         .slideshow-container {
             height: 30vh;
             margin-bottom: 15px; /* Further reduced margin for small screens */
         }
+    .nav-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 15px 20px;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        font-size: 24px;
+        z-index: 10;
+        transition: all 0.3s ease;
+    }
 
+    .nav-button:hover {
+        background: rgba(0, 255, 255, 0.3);
+    }
+
+    .prev { 
+        left: 20px; 
+    }
+
+    .next { 
+        right: 20px; 
+    }
         .slide {
             height: 30vh;
         }
