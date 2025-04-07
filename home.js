@@ -125,25 +125,3 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll('.motto-box').forEach(box => {
                 textObserver.observe(box);
             });
-const bodyChildren = Array.from($0.children);
-const elementsToUpdate = bodyChildren.filter(child => {
-  const styles = window.getComputedStyle(child);
-  return styles.width === '980px';
-});
-for (const element of elementsToUpdate) {
-  await setElementStyles(element, { maxWidth: '100%', width: 'auto' });
-}
-const updatedChildWidths = elementsToUpdate.map(child => {
-  const styles = window.getComputedStyle(child);
-  return {
-    tagName: child.tagName,
-    id: child.id,
-    className: child.className,
-    width: styles.width,
-  };
-});
-const bodyStyle = window.getComputedStyle($0);
-const data = {
-  updatedChildWidths,
-  bodyWidth: bodyStyle.width,
-};
