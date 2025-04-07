@@ -193,7 +193,9 @@ img {
     transition: all 0.3s ease;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
 .dropdown-menu a:hover {
     background: rgba(0, 255, 255, 0.1);
     color: #00ffff;
