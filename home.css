@@ -1895,7 +1895,15 @@ img {
             height: 60px;
             padding: 0 40px;
         }
-
+        .dropdown-menu a {
+            display: block;
+            padding: 15px 75px;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
         .menu {
             flex-direction: row;
             gap: 2px;
